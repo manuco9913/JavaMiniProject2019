@@ -2,11 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b5a7c9c-778e-466e-87ba-c967058ba152" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/primitives/Coordinate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/primitives/Util.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/user.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/primitives/Material.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/primitives/Point2D.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/primitives/Point3D.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/primitives/Point3DTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/primitives/Ray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/primitives/Vector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/primitives/VectorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primitives/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaMiniProject2019.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaMiniProject2019.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaMiniProject2019/com/company/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/primitives/Coordinate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primitives/Coordinate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/primitives/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primitives/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/primitives/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primitives/Util.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,37 +28,131 @@
     <favorites_list name="JavaMiniProject2019" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/primitives/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/primitives/Point2D.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/primitives/Coordinate.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="33" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+            <state relative-caret-position="279">
+              <caret line="80" column="5" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
               <folding>
-                <element signature="e#913#914#0" expanded="true" />
-                <element signature="e#952#953#0" expanded="true" />
+                <element signature="method#Point2D#0;class#Point2D#0" />
+                <element signature="method#Point2D#1;class#Point2D#0" />
+                <element signature="method#Point2D#2;class#Point2D#0" />
+                <element signature="method#getX#0;class#Point2D#0" />
+                <element signature="method#getY#0;class#Point2D#0" />
+                <element signature="method#setX#0;class#Point2D#0" />
+                <element signature="method#setY#0;class#Point2D#0" />
+                <element signature="docComment;method#compareTo#0;class#Point2D#0" />
+                <element signature="method#compareTo#0;class#Point2D#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/primitives/Util.java">
+        <entry file="file://$PROJECT_DIR$/src/primitives/Point3D.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="56" lean-forward="true" selection-start-line="12" selection-start-column="56" selection-end-line="12" selection-end-column="56" />
+            <state relative-caret-position="351">
+              <caret line="46" column="56" lean-forward="true" selection-start-line="35" selection-start-column="4" selection-end-line="46" selection-end-column="56" />
               <folding>
-                <element signature="method#uadd#0;class#Util#0" />
-                <element signature="method#uscale#0;class#Util#0" />
+                <element signature="method#Point3D#0;class#Point3D#0" />
+                <element signature="method#Point3D#1;class#Point3D#0" />
+                <element signature="method#Point3D#2;class#Point3D#0" />
+                <element signature="method#Point3D#3;class#Point3D#0" />
+                <element signature="method#getZ#0;class#Point3D#0" />
+                <element signature="method#setZ#0;class#Point3D#0" />
+                <element signature="method#compareTo#0;class#Point3D#0" />
+                <element signature="docComment;method#toString#0;class#Point3D#0" />
+                <element signature="docComment;method#divide#0;class#Point3D#0" />
+                <element signature="method#divide#0;class#Point3D#0" />
+                <element signature="docComment;method#add#0;class#Point3D#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/primitives/Point3DTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3366">
+              <caret line="291" column="2" lean-forward="true" selection-start-line="291" selection-start-column="2" selection-end-line="291" selection-end-column="2" />
+              <folding>
+                <element signature="method#compareTo#0;class#Point3DTest#0" />
+                <element signature="method#testToString#0;class#Point3DTest#0" />
+                <element signature="method#add#0;class#Point3DTest#0" />
+                <element signature="method#subtract#0;class#Point3DTest#0" />
+                <element signature="method#distance#0;class#Point3DTest#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/primitives/Vector.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="32" column="4" lean-forward="true" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+              <folding>
+                <element signature="n#!!block;n#Vector#0;n#Vector#0" />
+                <element signature="n#!!block;n#Vector#1;n#Vector#0" />
+                <element signature="n#!!block;n#Vector#2;n#Vector#0" />
+                <element signature="method#Vector#3;class#Vector#0" />
+                <element signature="method#getHead#0;class#Vector#0" />
+                <element signature="method#setHead#0;class#Vector#0" />
+                <element signature="e#883#942#0" />
+                <element signature="method#compareTo#0;class#Vector#0" />
+                <element signature="n#!!block;n#toString#0;n#Vector#0" />
+                <element signature="method#equals#0;class#Vector#0" />
+                <element signature="e#1824#1879#0" />
+                <element signature="method#add#0;class#Vector#0" />
+                <element signature="method#subtract#0;class#Vector#0" />
+                <element signature="method#scale#0;class#Vector#0" />
+                <element signature="method#crossProduct#0;class#Vector#0" />
+                <element signature="method#length#0;class#Vector#0" />
+                <element signature="method#normalize#0;class#Vector#0" />
+                <element signature="method#dotProduct#0;class#Vector#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/primitives/Ray.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="302">
+              <caret line="60" column="56" lean-forward="true" selection-start-line="51" selection-start-column="3" selection-end-line="60" selection-end-column="56" />
+              <folding>
+                <element signature="method#Ray#0;class#Ray#0" />
+                <element signature="method#Ray#1;class#Ray#0" />
+                <element signature="method#Ray#2;class#Ray#0" />
+                <element signature="method#setPOO#0;class#Ray#0" />
+                <element signature="method#setDirection#0;class#Ray#0" />
+                <element signature="method#getDirection#0;class#Ray#0" />
+                <element signature="method#getPOO#0;class#Ray#0" />
+                <element signature="method#compareTo#0;class#Ray#0" />
+                <element signature="n#!!block;n#toString#0;n#Ray#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/primitives/Coordinate.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="697">
+              <caret line="63" column="56" selection-start-line="54" selection-start-column="4" selection-end-line="63" selection-end-column="56" />
+              <folding>
+                <element signature="method#Coordinate#0;class#Coordinate#0" />
+                <element signature="method#Coordinate#1;class#Coordinate#0" />
+                <element signature="method#setCoordinate#0;class#Coordinate#0" />
+                <element signature="docComment;method#equals#0;class#Coordinate#0" />
+                <element signature="method#equals#0;class#Coordinate#0" />
+                <element signature="docComment;method#compareTo#0;class#Coordinate#0" />
+                <element signature="method#compareTo#0;class#Coordinate#0" />
+                <element signature="docComment;method#subtract#0;class#Coordinate#0" />
+                <element signature="docComment;method#add#0;class#Coordinate#0" />
+                <element signature="docComment;method#scale#0;class#Coordinate#0" />
+                <element signature="docComment;method#multiply#0;class#Coordinate#0" />
               </folding>
             </state>
           </provider>
@@ -61,6 +164,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -74,7 +179,16 @@
         <option value="$PROJECT_DIR$/src/com/company/Main.java" />
         <option value="$PROJECT_DIR$/src/com/company/Coordinate.java" />
         <option value="$PROJECT_DIR$/src/primitives/Util.java" />
+        <option value="$PROJECT_DIR$/src/primitives/Main.java" />
+        <option value="$PROJECT_DIR$/src/primitives/Material.java" />
+        <option value="$PROJECT_DIR$/src/primitives/VectorTest.java" />
         <option value="$PROJECT_DIR$/src/primitives/Coordinate.java" />
+        <option value="$PROJECT_DIR$/src/primitives/Point2D.java" />
+        <option value="$PROJECT_DIR$/src/primitives/Ray.java" />
+        <option value="$PROJECT_DIR$/src/primitives/Point3DTestTemp.java" />
+        <option value="$PROJECT_DIR$/src/primitives/Point3D.java" />
+        <option value="$PROJECT_DIR$/src/primitives/Point3DTest.java" />
+        <option value="$PROJECT_DIR$/src/primitives/Vector.java" />
       </list>
     </option>
   </component>
@@ -85,7 +199,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="676" />
+    <option name="x" value="-7" />
     <option name="width" value="697" />
     <option name="height" value="735" />
   </component>
@@ -97,6 +211,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -109,18 +224,45 @@
               <item name="JavaMiniProject2019" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="JavaMiniProject2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaMiniProject2019" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="primitives" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552579124841" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553531742809" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.splitter.proportion" value="0.23442137" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="primitives" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="run" />
+    </option>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -134,7 +276,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.Point3DTest">
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="primitives.Main" />
       <module name="JavaMiniProject2019" />
@@ -145,6 +287,94 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Point3DTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaMiniProject2019" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="primitives.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="primitives" />
+      <option name="MAIN_CLASS_NAME" value="primitives.Point3DTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Point3DTest.Test07" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaMiniProject2019" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="primitives.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="primitives" />
+      <option name="MAIN_CLASS_NAME" value="primitives.Point3DTest" />
+      <option name="METHOD_NAME" value="Test07" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Point3DTest.Test08" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaMiniProject2019" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="primitives.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="primitives" />
+      <option name="MAIN_CLASS_NAME" value="primitives.Point3DTest" />
+      <option name="METHOD_NAME" value="Test08" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Point3DTest.Test10" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaMiniProject2019" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="primitives.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="primitives" />
+      <option name="MAIN_CLASS_NAME" value="primitives.Point3DTest" />
+      <option name="METHOD_NAME" value="Test10" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Point3DTest.Test12" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaMiniProject2019" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="primitives.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="primitives" />
+      <option name="MAIN_CLASS_NAME" value="primitives.Point3DTest" />
+      <option name="METHOD_NAME" value="Test12" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.Point3DTest" />
+        <item itemvalue="JUnit.Point3DTest.Test12" />
+        <item itemvalue="JUnit.Point3DTest.Test10" />
+        <item itemvalue="JUnit.Point3DTest.Test08" />
+        <item itemvalue="JUnit.Point3DTest.Test07" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -157,13 +387,53 @@
       <option name="presentableId" value="Default" />
       <updated>1552342461652</updated>
     </task>
+    <task id="LOCAL-00001" summary="started- util and coordinate classes">
+      <created>1552579250981</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1552579250981</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="Point3DTest_Test06 - 2019.03.25 at 17h 54m 37s.xml">
+      <configuration name="Point3DTest.Test06" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Point3DTest_Test06 - 2019.03.25 at 17h 55m 05s.xml">
+      <configuration name="Point3DTest.Test06" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Point3DTest_Test07 - 2019.03.25 at 17h 55m 41s.xml">
+      <configuration name="Point3DTest.Test07" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Point3DTest_Test07 - 2019.03.25 at 17h 56m 13s.xml">
+      <configuration name="Point3DTest.Test07" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Point3DTest_Test08 - 2019.03.25 at 17h 57m 31s.xml">
+      <configuration name="Point3DTest.Test08" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Point3DTest_Test10 - 2019.03.25 at 17h 58m 17s.xml">
+      <configuration name="Point3DTest.Test10" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Point3DTest_Test12 - 2019.03.25 at 17h 59m 49s.xml">
+      <configuration name="Point3DTest.Test12" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Point3DTest - 2019.03.25 at 18h 00m 35s.xml">
+      <configuration name="Point3DTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Point3DTest - 2019.03.25 at 18h 06m 47s.xml">
+      <configuration name="Point3DTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Point3DTest_Test12 - 2019.03.25 at 18h 35m 55s.xml">
+      <configuration name="Point3DTest.Test12" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49918166" weight="0.16187595" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49918166" visible="true" weight="0.16111952" />
       <window_info id="Structure" order="1" sideWeight="0.5008183" side_tool="true" weight="0.15733737" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -171,15 +441,15 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" sideWeight="0.5008183" side_tool="true" weight="0.15733737" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.099836335" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3289689" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.23240589" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.14893617" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3207856" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3289689" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3289689" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
@@ -191,7 +461,7 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49918166" visible="true" weight="0.16187595" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49918166" weight="0.15885022" />
       <window_info id="Structure" order="1" sideWeight="0.5008183" side_tool="true" weight="0.15733737" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -199,15 +469,15 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" sideWeight="0.5008183" side_tool="true" weight="0.15733737" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.099836335" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3289689" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.23240589" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32569557" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3207856" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3289689" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3289689" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
@@ -219,28 +489,35 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout-to-restore>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="started- util and coordinate classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="started- util and coordinate classes" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/primitives/Vector.java</url>
+          <line>79</line>
+          <properties />
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/primitives/Vector.java</url>
+          <line>206</line>
+          <properties />
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/JavaMiniProject2019.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Util.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../שלב 1/Coordinate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="17" selection-end-line="56" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Util.java" />
+    <entry file="file://$PROJECT_DIR$/../שלב 1/Coordinate.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Double.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -279,31 +556,616 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Override.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="50" column="18" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Comparable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="135" column="25" selection-start-line="135" selection-start-column="25" selection-end-line="135" selection-end-column="25" />
+          <folding>
+            <element signature="docComment;class#Comparable#0" />
+            <element signature="docComment;method#compareTo#0;class#Comparable#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaMiniProject2019.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/awt/Color.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="395" column="5" lean-forward="true" selection-start-line="395" selection-start-column="5" selection-end-line="395" selection-end-column="5" />
+          <folding>
+            <element signature="docComment;class#Color#0" />
+            <element signature="e#1703#1766#0" />
+            <element signature="e#1840#1921#0" />
+            <element signature="e#1972#2040#0" />
+            <element signature="e#2114#2200#0" />
+            <element signature="e#2260#2322#0" />
+            <element signature="e#2396#2476#0" />
+            <element signature="e#2525#2592#0" />
+            <element signature="e#2663#2748#0" />
+            <element signature="e#2806#2869#0" />
+            <element signature="e#2937#3018#0" />
+            <element signature="e#3069#3130#0" />
+            <element signature="e#3200#3279#0" />
+            <element signature="e#3326#3388#0" />
+            <element signature="e#3462#3542#0" />
+            <element signature="e#3591#3655#0" />
+            <element signature="e#3727#3809#0" />
+            <element signature="e#3862#3926#0" />
+            <element signature="e#3998#4080#0" />
+            <element signature="e#4133#4196#0" />
+            <element signature="e#4266#4347#0" />
+            <element signature="e#4398#4463#0" />
+            <element signature="e#4535#4618#0" />
+            <element signature="e#4673#4735#0" />
+            <element signature="e#4807#4887#0" />
+            <element signature="e#4936#4998#0" />
+            <element signature="e#5068#5148#0" />
+            <element signature="e#5197#5267#0" />
+            <element signature="e#5288#5678#0" />
+            <element signature="e#5722#6106#0" />
+            <element signature="e#6147#6424#0" />
+            <element signature="e#6463#6663#0" />
+            <element signature="e#6822#6876#0" />
+            <element signature="initializer##0;class#Color#0" />
+            <element signature="e#7310#7344#1" />
+            <element signature="e#7356#7626#0" />
+            <element signature="e#7356#8532#0" />
+            <element signature="e#7809#7915#1" />
+            <element signature="e#7947#8051#1" />
+            <element signature="e#8083#8189#1" />
+            <element signature="e#8221#8326#1" />
+            <element signature="e#8361#8526#1" />
+            <element signature="e#8538#8831#0" />
+            <element signature="e#8538#9752#0" />
+            <element signature="e#9023#9129#1" />
+            <element signature="e#9163#9267#1" />
+            <element signature="e#9301#9407#1" />
+            <element signature="e#9441#9546#1" />
+            <element signature="e#9581#9746#1" />
+            <element signature="e#9758#10426#0" />
+            <element signature="e#10506#11065#0" />
+            <element signature="e#10506#11364#0" />
+            <element signature="e#11370#11957#0" />
+            <element signature="e#12031#12703#0" />
+            <element signature="e#12031#12872#0" />
+            <element signature="e#12773#12810#1" />
+            <element signature="e#12816#12866#1" />
+            <element signature="e#12878#13550#0" />
+            <element signature="e#12878#13878#0" />
+            <element signature="e#13884#14587#0" />
+            <element signature="e#13884#14894#0" />
+            <element signature="e#14900#15793#0" />
+            <element signature="e#14900#17037#0" />
+            <element signature="e#16051#16356#1" />
+            <element signature="e#16113#16282#1" />
+            <element signature="e#16288#16346#1" />
+            <element signature="e#16397#16502#1" />
+            <element signature="e#16508#16547#1" />
+            <element signature="e#16572#16732#1" />
+            <element signature="e#17043#17194#0" />
+            <element signature="e#17272#17427#0" />
+            <element signature="e#17506#17659#0" />
+            <element signature="e#17737#17859#0" />
+            <element signature="e#17939#18370#0" />
+            <element signature="e#18477#19303#0" />
+            <element signature="e#18477#20144#0" />
+            <element signature="e#19765#19822#1" />
+            <element signature="e#20150#20975#0" />
+            <element signature="e#20150#21239#0" />
+            <element signature="e#21245#21395#0" />
+            <element signature="e#21457#22048#0" />
+            <element signature="e#22179#22575#0" />
+            <element signature="e#22179#22715#0" />
+            <element signature="e#22721#23387#0" />
+            <element signature="e#22721#23617#0" />
+            <element signature="e#23623#24392#0" />
+            <element signature="e#24485#25400#0" />
+            <element signature="e#24485#25678#0" />
+            <element signature="e#25533#25566#1" />
+            <element signature="e#25684#26674#0" />
+            <element signature="e#25684#26918#0" />
+            <element signature="e#26924#28363#0" />
+            <element signature="e#26924#30170#0" />
+            <element signature="e#28506#28577#1" />
+            <element signature="e#28583#30103#1" />
+            <element signature="e#28920#30093#0" />
+            <element signature="e#30176#31330#0" />
+            <element signature="e#30176#32548#0" />
+            <element signature="e#31478#31525#1" />
+            <element signature="e#31903#32426#1" />
+            <element signature="e#32554#33402#0" />
+            <element signature="e#33524#34148#0" />
+            <element signature="e#33524#34728#0" />
+            <element signature="e#34256#34297#1" />
+            <element signature="e#34303#34341#1" />
+            <element signature="e#34373#34561#1" />
+            <element signature="e#34567#34704#1" />
+            <element signature="e#34734#35313#0" />
+            <element signature="e#34734#35826#0" />
+            <element signature="e#35426#35467#1" />
+            <element signature="e#35473#35511#1" />
+            <element signature="e#35543#35686#1" />
+            <element signature="e#35692#35802#1" />
+            <element signature="e#35832#36662#0" />
+            <element signature="e#35832#37088#0" />
+            <element signature="e#36874#36919#1" />
+            <element signature="e#36925#36963#1" />
+            <element signature="e#37000#37041#1" />
+            <element signature="e#37094#37874#0" />
+            <element signature="e#37094#38283#0" />
+            <element signature="e#38096#38137#1" />
+            <element signature="e#38143#38181#1" />
+            <element signature="e#38218#38259#1" />
+            <element signature="e#38289#39182#0" />
+            <element signature="e#38289#40099#0" />
+            <element signature="e#39280#39352#1" />
+            <element signature="e#39400#39573#1" />
+            <element signature="e#39579#39614#1" />
+            <element signature="e#39733#39798#1" />
+            <element signature="e#39849#39898#1" />
+            <element signature="e#39927#40003#1" />
+            <element signature="e#40009#40067#1" />
+            <element signature="e#40105#40935#0" />
+            <element signature="e#40105#41661#0" />
+            <element signature="e#41038#41110#1" />
+            <element signature="e#41158#41331#1" />
+            <element signature="e#41337#41372#1" />
+            <element signature="e#41491#41529#1" />
+            <element signature="e#41580#41629#1" />
+            <element signature="e#41667#41822#0" />
+            <element signature="e#41667#41984#0" />
+            <element signature="e#41887#41959#1" />
+            <element signature="e#41990#43199#0" />
+            <element signature="e#41990#43553#0" />
+            <element signature="e#43559#43845#0" />
+            <element signature="e#43559#44149#0" />
+            <element signature="e#43940#43991#1" />
+            <element signature="e#44021#44073#1" />
+            <element signature="e#44087#44143#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../Semester B/מיני פרוייקט מבוא להנדסת תוכנה/JavaMiniProject2019/מיני פרוייקט מבוא להנדסת תוכנה.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/primitives/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="102">
+          <caret line="6" column="48" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
+          <folding>
+            <element signature="e#89#90#0" expanded="true" />
+            <element signature="e#114#115#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/primitives/Material.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="37" column="40" selection-start-line="37" selection-start-column="40" selection-end-line="37" selection-end-column="40" />
+          <folding>
+            <element signature="method#Material#0;class#Material#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/primitives/Util.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="56" lean-forward="true" selection-start-line="12" selection-start-column="56" selection-end-line="12" selection-end-column="56" />
+        <state relative-caret-position="170">
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
           <folding>
+            <element signature="e#487#556#0" />
+            <element signature="method#usubtract#0;class#Util#0" />
+            <element signature="e#926#979#0" />
+            <element signature="e#1066#1119#0" />
             <element signature="method#uadd#0;class#Util#0" />
+            <element signature="e#1538#1591#0" />
+            <element signature="e#1678#1731#0" />
             <element signature="method#uscale#0;class#Util#0" />
+            <element signature="e#2432#2433#0" expanded="true" />
+            <element signature="e#2495#2496#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/text/NumberFormat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="289" column="24" selection-start-line="289" selection-start-column="24" selection-end-line="289" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="147" column="37" lean-forward="true" selection-start-line="147" selection-start-column="4" selection-end-line="147" selection-end-column="37" />
+          <folding>
+            <element signature="docComment;class#Object#0" />
+            <element signature="initializer##0;class#Object#0" />
+            <element signature="docComment;method#getClass#0;class#Object#0" />
+            <element signature="docComment;method#hashCode#0;class#Object#0" />
+            <element signature="docComment;method#equals#0;class#Object#0" />
+            <element signature="docComment;method#clone#0;class#Object#0" />
+            <element signature="docComment;method#toString#0;class#Object#0" />
+            <element signature="e#10065#10066#0" expanded="true" />
+            <element signature="e#10148#10149#0" expanded="true" />
+            <element signature="docComment;method#notify#0;class#Object#0" />
+            <element signature="docComment;method#notifyAll#0;class#Object#0" />
+            <element signature="docComment;method#wait#0;class#Object#0" />
+            <element signature="docComment;method#wait#1;class#Object#0" />
+            <element signature="method#wait#1;class#Object#0" />
+            <element signature="e#20682#20770#1" />
+            <element signature="e#20813#20946#1" />
+            <element signature="e#20971#21005#1" />
+            <element signature="docComment;method#wait#2;class#Object#0" />
+            <element signature="method#wait#2;class#Object#0" />
+            <element signature="docComment;method#finalize#0;class#Object#0" />
+            <element signature="method#finalize#0;class#Object#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/primitives/VectorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="107" column="22" selection-start-line="107" selection-start-column="22" selection-end-line="107" selection-end-column="22" />
+          <folding>
+            <element signature="method#add#0;class#VectorTest#0" />
+            <element signature="method#subtract#0;class#VectorTest#0" />
+            <element signature="method#scale#0;class#VectorTest#0" />
+            <element signature="method#crossProduct#0;class#VectorTest#0" />
+            <element signature="method#length#0;class#VectorTest#0" />
+            <element signature="method#normalize#0;class#VectorTest#0" />
+            <element signature="method#dotProduct#0;class#VectorTest#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/primitives/Coordinate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="33" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+        <state relative-caret-position="697">
+          <caret line="63" column="56" selection-start-line="54" selection-start-column="4" selection-end-line="63" selection-end-column="56" />
           <folding>
-            <element signature="e#913#914#0" expanded="true" />
-            <element signature="e#952#953#0" expanded="true" />
+            <element signature="method#Coordinate#0;class#Coordinate#0" />
+            <element signature="method#Coordinate#1;class#Coordinate#0" />
+            <element signature="method#setCoordinate#0;class#Coordinate#0" />
+            <element signature="docComment;method#equals#0;class#Coordinate#0" />
+            <element signature="method#equals#0;class#Coordinate#0" />
+            <element signature="docComment;method#compareTo#0;class#Coordinate#0" />
+            <element signature="method#compareTo#0;class#Coordinate#0" />
+            <element signature="docComment;method#subtract#0;class#Coordinate#0" />
+            <element signature="docComment;method#add#0;class#Coordinate#0" />
+            <element signature="docComment;method#scale#0;class#Coordinate#0" />
+            <element signature="docComment;method#multiply#0;class#Coordinate#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/primitives/Point3DTestTemp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="1256" selection-start-line="1256" selection-end-line="1256" />
+          <folding>
+            <element signature="docComment;class#ArrayList#0" />
+            <element signature="e#4467#4511#0" />
+            <element signature="e#4569#4641#0" />
+            <element signature="e#4705#4905#0" />
+            <element signature="e#4985#5304#0" />
+            <element signature="e#5393#5497#0" />
+            <element signature="e#5525#5778#0" />
+            <element signature="e#5525#6177#0" />
+            <element signature="e#5856#5927#1" />
+            <element signature="e#5959#6020#1" />
+            <element signature="e#6026#6171#1" />
+            <element signature="e#6183#6259#0" />
+            <element signature="e#6358#6679#0" />
+            <element signature="e#6358#7153#0" />
+            <element signature="e#6811#7039#1" />
+            <element signature="e#7045#7147#1" />
+            <element signature="e#7159#7375#0" />
+            <element signature="e#7159#7605#0" />
+            <element signature="e#7466#7599#1" />
+            <element signature="e#7611#7886#0" />
+            <element signature="e#7611#8337#0" />
+            <element signature="e#8093#8153#0" />
+            <element signature="e#8271#8331#1" />
+            <element signature="e#8343#8588#0" />
+            <element signature="e#8483#8554#1" />
+            <element signature="e#8594#8731#0" />
+            <element signature="e#8737#8934#0" />
+            <element signature="e#8940#9171#0" />
+            <element signature="e#9246#9459#0" />
+            <element signature="e#9246#9958#0" />
+            <element signature="e#9964#10211#0" />
+            <element signature="e#10217#10338#0" />
+            <element signature="e#10395#10540#0" />
+            <element signature="e#10609#11040#0" />
+            <element signature="e#11124#11468#0" />
+            <element signature="e#11124#11814#0" />
+            <element signature="e#11527#11653#1" />
+            <element signature="e#11659#11789#1" />
+            <element signature="e#11820#12164#0" />
+            <element signature="e#11820#12520#0" />
+            <element signature="e#12227#12356#1" />
+            <element signature="e#12362#12495#1" />
+            <element signature="e#12526#12720#0" />
+            <element signature="e#12526#13099#0" />
+            <element signature="e#12761#12943#0" />
+            <element signature="e#12981#13093#0" />
+            <element signature="e#13105#13682#0" />
+            <element signature="e#13775#15105#0" />
+            <element signature="e#13775#15483#0" />
+            <element signature="e#15638#15896#0" />
+            <element signature="e#15638#15995#0" />
+            <element signature="e#16001#16361#0" />
+            <element signature="e#16001#16540#0" />
+            <element signature="e#16546#16748#0" />
+            <element signature="e#16546#16906#0" />
+            <element signature="e#16912#17321#0" />
+            <element signature="e#16912#17636#0" />
+            <element signature="e#17642#17992#0" />
+            <element signature="e#17642#18392#0" />
+            <element signature="e#18398#19073#0" />
+            <element signature="e#18398#19583#0" />
+            <element signature="e#19135#19341#1" />
+            <element signature="e#19240#19331#1" />
+            <element signature="e#19347#19555#1" />
+            <element signature="e#19454#19545#1" />
+            <element signature="e#19589#20013#0" />
+            <element signature="e#20019#20137#0" />
+            <element signature="e#20019#20322#0" />
+            <element signature="e#20328#21020#0" />
+            <element signature="e#20328#21328#0" />
+            <element signature="e#21334#22130#0" />
+            <element signature="e#21334#22667#0" />
+            <element signature="e#22673#23319#0" />
+            <element signature="e#22673#23758#0" />
+            <element signature="e#23682#23728#1" />
+            <element signature="e#23764#24073#0" />
+            <element signature="e#23764#24219#0" />
+            <element signature="e#24225#24291#0" />
+            <element signature="e#24225#24455#0" />
+            <element signature="e#24461#24675#0" />
+            <element signature="e#24782#25571#0" />
+            <element signature="e#24782#25698#0" />
+            <element signature="e#25704#26607#0" />
+            <element signature="e#25704#26733#0" />
+            <element signature="e#26739#27757#0" />
+            <element signature="e#26933#27095#0" />
+            <element signature="e#27104#27726#0" />
+            <element signature="e#27118#27179#0" />
+            <element signature="e#27251#27439#1" />
+            <element signature="e#27467#27716#1" />
+            <element signature="e#27763#28100#0" />
+            <element signature="e#27763#28697#0" />
+            <element signature="e#28525#28579#1" />
+            <element signature="e#28623#28691#1" />
+            <element signature="e#28703#28814#0" />
+            <element signature="e#28703#29612#0" />
+            <element signature="e#29136#29606#1" />
+            <element signature="e#29542#29596#1" />
+            <element signature="e#29618#30192#0" />
+            <element signature="e#29618#30391#0" />
+            <element signature="e#30397#30627#0" />
+            <element signature="e#30714#30972#0" />
+            <element signature="e#31046#31105#0" />
+            <element signature="e#31046#33340#0" />
+            <element signature="e#31438#31891#0" />
+            <element signature="e#31901#32355#0" />
+            <element signature="e#32059#32231#0" />
+            <element signature="e#32269#32345#0" />
+            <element signature="e#32365#32374#0" />
+            <element signature="e#32365#33170#0" />
+            <element signature="e#32634#32673#1" />
+            <element signature="e#32784#32860#1" />
+            <element signature="e#32923#32993#1" />
+            <element signature="e#33180#33334#0" />
+            <element signature="e#33346#33409#0" />
+            <element signature="e#33346#35028#0" />
+            <element signature="e#33485#33564#0" />
+            <element signature="e#33806#34259#0" />
+            <element signature="e#34269#34614#0" />
+            <element signature="e#34427#34490#0" />
+            <element signature="e#34528#34604#0" />
+            <element signature="e#34624#35022#0" />
+            <element signature="e#34702#34898#0" />
+            <element signature="e#34936#35012#0" />
+            <element signature="e#35034#36634#0" />
+            <element signature="e#35034#36807#0" />
+            <element signature="e#36813#37280#0" />
+            <element signature="e#37286#45617#0" />
+            <element signature="e#37505#37825#0" />
+            <element signature="e#37835#38102#0" />
+            <element signature="e#38112#38279#0" />
+            <element signature="e#38289#38386#0" />
+            <element signature="e#38396#38633#0" />
+            <element signature="e#38643#38907#0" />
+            <element signature="e#38917#39225#0" />
+            <element signature="e#39346#39737#0" />
+            <element signature="e#39833#44503#0" />
+            <element signature="class#40031:44492" />
+            <element signature="method#next#0;class#40031:44492" />
+            <element signature="method#previous#0;class#40031:44492" />
+            <element signature="method#forEachRemaining#0;class#40031:44492" />
+            <element signature="e#41886#41941#1" />
+            <element signature="e#42077#42169#1" />
+            <element signature="e#42240#42337#1" />
+            <element signature="method#remove#0;class#40031:44492" />
+            <element signature="e#42933#43158#0" />
+            <element signature="e#43196#43288#0" />
+            <element signature="method#set#0;class#40031:44492" />
+            <element signature="e#43514#43602#0" />
+            <element signature="e#43640#43732#0" />
+            <element signature="method#add#0;class#40031:44492" />
+            <element signature="e#43862#44119#0" />
+            <element signature="e#44157#44249#0" />
+            <element signature="method#checkForComodification#0;class#40031:44492" />
+            <element signature="e#44513#44698#0" />
+            <element signature="e#44708#44879#0" />
+            <element signature="e#44889#45065#0" />
+            <element signature="e#45194#45362#0" />
+            <element signature="e#45372#45611#0" />
+            <element signature="e#46071#46139#1" />
+            <element signature="e#46151#46676#0" />
+            <element signature="e#46803#46866#0" />
+            <element signature="e#46803#52038#0" />
+            <element signature="e#49111#49166#0" />
+            <element signature="e#49111#49480#0" />
+            <element signature="e#49490#49956#0" />
+            <element signature="e#49693#49923#1" />
+            <element signature="e#49794#49909#1" />
+            <element signature="e#49966#50298#0" />
+            <element signature="e#50308#50856#0" />
+            <element signature="e#50514#50820#1" />
+            <element signature="e#50866#51803#0" />
+            <element signature="e#51186#51736#1" />
+            <element signature="e#51226#51319#1" />
+            <element signature="e#51450#51722#1" />
+            <element signature="e#51492#51628#1" />
+            <element signature="e#52044#53641#0" />
+            <element signature="e#52161#52207#0" />
+            <element signature="e#52560#52783#1" />
+            <element signature="e#52693#52773#1" />
+            <element signature="e#52826#52894#1" />
+            <element signature="e#53056#53606#1" />
+            <element signature="e#53180#53291#1" />
+            <element signature="e#53339#53416#1" />
+            <element signature="e#53496#53572#1" />
+            <element signature="e#53647#53656#0" />
+            <element signature="e#53647#54155#0" />
+            <element signature="e#53942#54018#1" />
+            <element signature="e#54061#54129#1" />
+            <element signature="e#54161#54170#0" />
+            <element signature="e#54161#54489#0" />
+            <element signature="e#54395#54463#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.5.0-M1/junit-platform-commons-1.5.0-M1.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="363" selection-start-line="363" selection-end-line="363" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/primitives/Point2D.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="80" column="5" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
+          <folding>
+            <element signature="method#Point2D#0;class#Point2D#0" />
+            <element signature="method#Point2D#1;class#Point2D#0" />
+            <element signature="method#Point2D#2;class#Point2D#0" />
+            <element signature="method#getX#0;class#Point2D#0" />
+            <element signature="method#getY#0;class#Point2D#0" />
+            <element signature="method#setX#0;class#Point2D#0" />
+            <element signature="method#setY#0;class#Point2D#0" />
+            <element signature="docComment;method#compareTo#0;class#Point2D#0" />
+            <element signature="method#compareTo#0;class#Point2D#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/primitives/Point3DTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3366">
+          <caret line="291" column="2" lean-forward="true" selection-start-line="291" selection-start-column="2" selection-end-line="291" selection-end-column="2" />
+          <folding>
+            <element signature="method#compareTo#0;class#Point3DTest#0" />
+            <element signature="method#testToString#0;class#Point3DTest#0" />
+            <element signature="method#add#0;class#Point3DTest#0" />
+            <element signature="method#subtract#0;class#Point3DTest#0" />
+            <element signature="method#distance#0;class#Point3DTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/primitives/Point3D.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="46" column="56" lean-forward="true" selection-start-line="35" selection-start-column="4" selection-end-line="46" selection-end-column="56" />
+          <folding>
+            <element signature="method#Point3D#0;class#Point3D#0" />
+            <element signature="method#Point3D#1;class#Point3D#0" />
+            <element signature="method#Point3D#2;class#Point3D#0" />
+            <element signature="method#Point3D#3;class#Point3D#0" />
+            <element signature="method#getZ#0;class#Point3D#0" />
+            <element signature="method#setZ#0;class#Point3D#0" />
+            <element signature="method#compareTo#0;class#Point3D#0" />
+            <element signature="docComment;method#toString#0;class#Point3D#0" />
+            <element signature="docComment;method#divide#0;class#Point3D#0" />
+            <element signature="method#divide#0;class#Point3D#0" />
+            <element signature="docComment;method#add#0;class#Point3D#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/primitives/Ray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="60" column="56" lean-forward="true" selection-start-line="51" selection-start-column="3" selection-end-line="60" selection-end-column="56" />
+          <folding>
+            <element signature="method#Ray#0;class#Ray#0" />
+            <element signature="method#Ray#1;class#Ray#0" />
+            <element signature="method#Ray#2;class#Ray#0" />
+            <element signature="method#setPOO#0;class#Ray#0" />
+            <element signature="method#setDirection#0;class#Ray#0" />
+            <element signature="method#getDirection#0;class#Ray#0" />
+            <element signature="method#getPOO#0;class#Ray#0" />
+            <element signature="method#compareTo#0;class#Ray#0" />
+            <element signature="n#!!block;n#toString#0;n#Ray#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/primitives/Vector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="32" column="4" lean-forward="true" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+          <folding>
+            <element signature="n#!!block;n#Vector#0;n#Vector#0" />
+            <element signature="n#!!block;n#Vector#1;n#Vector#0" />
+            <element signature="n#!!block;n#Vector#2;n#Vector#0" />
+            <element signature="method#Vector#3;class#Vector#0" />
+            <element signature="method#getHead#0;class#Vector#0" />
+            <element signature="method#setHead#0;class#Vector#0" />
+            <element signature="e#883#942#0" />
+            <element signature="method#compareTo#0;class#Vector#0" />
+            <element signature="n#!!block;n#toString#0;n#Vector#0" />
+            <element signature="method#equals#0;class#Vector#0" />
+            <element signature="e#1824#1879#0" />
+            <element signature="method#add#0;class#Vector#0" />
+            <element signature="method#subtract#0;class#Vector#0" />
+            <element signature="method#scale#0;class#Vector#0" />
+            <element signature="method#crossProduct#0;class#Vector#0" />
+            <element signature="method#length#0;class#Vector#0" />
+            <element signature="method#normalize#0;class#Vector#0" />
+            <element signature="method#dotProduct#0;class#Vector#0" />
           </folding>
         </state>
       </provider>
