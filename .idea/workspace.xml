@@ -2,20 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b5a7c9c-778e-466e-87ba-c967058ba152" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/user.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/primitives/Material.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/primitives/Point2D.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/primitives/Point3D.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/primitives/Point3DTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/primitives/Ray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/primitives/Vector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/primitives/VectorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tests/Point3DTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tests/VectorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaMiniProject2019.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaMiniProject2019.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaMiniProject2019/com/company/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/primitives/Coordinate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primitives/Coordinate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/primitives/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primitives/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/primitives/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primitives/Util.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaMiniProject2019/primitives/Point3D.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaMiniProject2019/primitives/Point3D.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaMiniProject2019/primitives/Point3DTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaMiniProject2019/primitives/Vector.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaMiniProject2019/primitives/Vector.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaMiniProject2019/primitives/VectorTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/primitives/Point3D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primitives/Point3D.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/primitives/Point3DTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/primitives/Ray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primitives/Ray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/primitives/VectorTest.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,129 +27,51 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/primitives/Point2D.java">
+        <entry file="file://$PROJECT_DIR$/src/Geometries/Geometry.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="80" column="5" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
+            <state relative-caret-position="103">
+              <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
               <folding>
-                <element signature="method#Point2D#0;class#Point2D#0" />
-                <element signature="method#Point2D#1;class#Point2D#0" />
-                <element signature="method#Point2D#2;class#Point2D#0" />
-                <element signature="method#getX#0;class#Point2D#0" />
-                <element signature="method#getY#0;class#Point2D#0" />
-                <element signature="method#setX#0;class#Point2D#0" />
-                <element signature="method#setY#0;class#Point2D#0" />
-                <element signature="docComment;method#compareTo#0;class#Point2D#0" />
-                <element signature="method#compareTo#0;class#Point2D#0" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/primitives/Point3D.java">
+        <entry file="file://$PROJECT_DIR$/src/Geometries/RadialGeometry.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="46" column="56" lean-forward="true" selection-start-line="35" selection-start-column="4" selection-end-line="46" selection-end-column="56" />
+            <state relative-caret-position="187">
+              <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
               <folding>
-                <element signature="method#Point3D#0;class#Point3D#0" />
-                <element signature="method#Point3D#1;class#Point3D#0" />
-                <element signature="method#Point3D#2;class#Point3D#0" />
-                <element signature="method#Point3D#3;class#Point3D#0" />
-                <element signature="method#getZ#0;class#Point3D#0" />
-                <element signature="method#setZ#0;class#Point3D#0" />
-                <element signature="method#compareTo#0;class#Point3D#0" />
-                <element signature="docComment;method#toString#0;class#Point3D#0" />
-                <element signature="docComment;method#divide#0;class#Point3D#0" />
-                <element signature="method#divide#0;class#Point3D#0" />
-                <element signature="docComment;method#add#0;class#Point3D#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/primitives/Point3DTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3366">
-              <caret line="291" column="2" lean-forward="true" selection-start-line="291" selection-start-column="2" selection-end-line="291" selection-end-column="2" />
-              <folding>
-                <element signature="method#compareTo#0;class#Point3DTest#0" />
-                <element signature="method#testToString#0;class#Point3DTest#0" />
-                <element signature="method#add#0;class#Point3DTest#0" />
-                <element signature="method#subtract#0;class#Point3DTest#0" />
-                <element signature="method#distance#0;class#Point3DTest#0" />
+                <element signature="n#!!block;n#RadialGeometry#0;n#RadialGeometry#0" />
+                <element signature="n#!!block;n#RadialGeometry#1;n#RadialGeometry#0" />
+                <element signature="n#!!block;n#getRadius#0;n#RadialGeometry#0" />
+                <element signature="n#!!block;n#setRadius#0;n#RadialGeometry#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/primitives/Vector.java">
+        <entry file="file://$PROJECT_DIR$/src/Tests/GeometriesTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="32" column="4" lean-forward="true" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+            <state relative-caret-position="102">
+              <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
               <folding>
-                <element signature="n#!!block;n#Vector#0;n#Vector#0" />
-                <element signature="n#!!block;n#Vector#1;n#Vector#0" />
-                <element signature="n#!!block;n#Vector#2;n#Vector#0" />
-                <element signature="method#Vector#3;class#Vector#0" />
-                <element signature="method#getHead#0;class#Vector#0" />
-                <element signature="method#setHead#0;class#Vector#0" />
-                <element signature="e#883#942#0" />
-                <element signature="method#compareTo#0;class#Vector#0" />
-                <element signature="n#!!block;n#toString#0;n#Vector#0" />
-                <element signature="method#equals#0;class#Vector#0" />
-                <element signature="e#1824#1879#0" />
-                <element signature="method#add#0;class#Vector#0" />
-                <element signature="method#subtract#0;class#Vector#0" />
-                <element signature="method#scale#0;class#Vector#0" />
-                <element signature="method#crossProduct#0;class#Vector#0" />
-                <element signature="method#length#0;class#Vector#0" />
-                <element signature="method#normalize#0;class#Vector#0" />
-                <element signature="method#dotProduct#0;class#Vector#0" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/primitives/Ray.java">
+        <entry file="file://$PROJECT_DIR$/src/Geometries/Triangle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="60" column="56" lean-forward="true" selection-start-line="51" selection-start-column="3" selection-end-line="60" selection-end-column="56" />
+            <state relative-caret-position="340">
+              <caret line="37" column="6" selection-start-line="37" selection-start-column="6" selection-end-line="37" selection-end-column="6" />
               <folding>
-                <element signature="method#Ray#0;class#Ray#0" />
-                <element signature="method#Ray#1;class#Ray#0" />
-                <element signature="method#Ray#2;class#Ray#0" />
-                <element signature="method#setPOO#0;class#Ray#0" />
-                <element signature="method#setDirection#0;class#Ray#0" />
-                <element signature="method#getDirection#0;class#Ray#0" />
-                <element signature="method#getPOO#0;class#Ray#0" />
-                <element signature="method#compareTo#0;class#Ray#0" />
-                <element signature="n#!!block;n#toString#0;n#Ray#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/primitives/Coordinate.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
-              <caret line="63" column="56" selection-start-line="54" selection-start-column="4" selection-end-line="63" selection-end-column="56" />
-              <folding>
-                <element signature="method#Coordinate#0;class#Coordinate#0" />
-                <element signature="method#Coordinate#1;class#Coordinate#0" />
-                <element signature="method#setCoordinate#0;class#Coordinate#0" />
-                <element signature="docComment;method#equals#0;class#Coordinate#0" />
-                <element signature="method#equals#0;class#Coordinate#0" />
-                <element signature="docComment;method#compareTo#0;class#Coordinate#0" />
-                <element signature="method#compareTo#0;class#Coordinate#0" />
-                <element signature="docComment;method#subtract#0;class#Coordinate#0" />
-                <element signature="docComment;method#add#0;class#Coordinate#0" />
-                <element signature="docComment;method#scale#0;class#Coordinate#0" />
-                <element signature="docComment;method#multiply#0;class#Coordinate#0" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -163,11 +82,19 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>df</find>
+    </findStrings>
+    <dirStrings>
+      <dir>C:\Users\user\OneDrive\Documents\Studies\שנה ב (2019-תשעט)\Semester B\מיני פרוייקט מבוא להנדסת תוכנה\JavaMiniProject2019\src\primitives</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -184,11 +111,17 @@
         <option value="$PROJECT_DIR$/src/primitives/VectorTest.java" />
         <option value="$PROJECT_DIR$/src/primitives/Coordinate.java" />
         <option value="$PROJECT_DIR$/src/primitives/Point2D.java" />
-        <option value="$PROJECT_DIR$/src/primitives/Ray.java" />
         <option value="$PROJECT_DIR$/src/primitives/Point3DTestTemp.java" />
-        <option value="$PROJECT_DIR$/src/primitives/Point3D.java" />
-        <option value="$PROJECT_DIR$/src/primitives/Point3DTest.java" />
         <option value="$PROJECT_DIR$/src/primitives/Vector.java" />
+        <option value="$PROJECT_DIR$/src/primitives/Point3DTest.java" />
+        <option value="$PROJECT_DIR$/src/primitives/Point3D.java" />
+        <option value="$PROJECT_DIR$/src/Tests/VectorTest.java" />
+        <option value="$PROJECT_DIR$/src/Tests/Point3DTest.java" />
+        <option value="$PROJECT_DIR$/src/primitives/Ray.java" />
+        <option value="$PROJECT_DIR$/src/Geometries/RadialGeometry.java" />
+        <option value="$PROJECT_DIR$/src/Geometries/Geometry.java" />
+        <option value="$PROJECT_DIR$/src/Geometries/Triangle.java" />
+        <option value="$PROJECT_DIR$/src/Tests/GeometriesTest.java" />
       </list>
     </option>
   </component>
@@ -199,7 +132,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
+    <option name="x" value="185" />
+    <option name="y" value="-17" />
     <option name="width" value="697" />
     <option name="height" value="735" />
   </component>
@@ -211,7 +145,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -228,13 +161,26 @@
               <item name="JavaMiniProject2019" type="b2602c69:ProjectViewProjectNode" />
               <item name="JavaMiniProject2019" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Geometries" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaMiniProject2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaMiniProject2019" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="primitives" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaMiniProject2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaMiniProject2019" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Tests" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -242,13 +188,13 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553531742809" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554732833792" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
     <property name="settings.editor.splitter.proportion" value="0.23442137" />
   </component>
   <component name="RecentsManager">
@@ -276,13 +222,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Point3DTest">
+  <component name="RunManager" selected="JUnit.Point3DTest (1)">
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="primitives.Main" />
       <module name="JavaMiniProject2019" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Point3DTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaMiniProject2019" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Point3DTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -298,22 +259,6 @@
       <option name="PACKAGE_NAME" value="primitives" />
       <option name="MAIN_CLASS_NAME" value="primitives.Point3DTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Point3DTest.Test07" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaMiniProject2019" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="primitives.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="primitives" />
-      <option name="MAIN_CLASS_NAME" value="primitives.Point3DTest" />
-      <option name="METHOD_NAME" value="Test07" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -368,11 +313,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Point3DTest (1)" />
         <item itemvalue="JUnit.Point3DTest" />
         <item itemvalue="JUnit.Point3DTest.Test12" />
         <item itemvalue="JUnit.Point3DTest.Test10" />
         <item itemvalue="JUnit.Point3DTest.Test08" />
-        <item itemvalue="JUnit.Point3DTest.Test07" />
       </list>
     </recent_temporary>
   </component>
@@ -398,12 +343,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Point3DTest_Test06 - 2019.03.25 at 17h 54m 37s.xml">
-      <configuration name="Point3DTest.Test06" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Point3DTest_Test06 - 2019.03.25 at 17h 55m 05s.xml">
-      <configuration name="Point3DTest.Test06" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Point3DTest_Test07 - 2019.03.25 at 17h 55m 41s.xml">
       <configuration name="Point3DTest.Test07" configurationId="JUnit" />
     </history-entry>
@@ -428,12 +367,18 @@
     <history-entry file="Point3DTest_Test12 - 2019.03.25 at 18h 35m 55s.xml">
       <configuration name="Point3DTest.Test12" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Point3DTest - 2019.04.01 at 17h 11m 25s.xml">
+      <configuration name="Point3DTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Point3DTest_(1) - 2019.04.08 at 16h 56m 48s.xml">
+      <configuration name="Point3DTest (1)" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49918166" visible="true" weight="0.16111952" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49918166" visible="true" weight="0.18305598" />
       <window_info id="Structure" order="1" sideWeight="0.5008183" side_tool="true" weight="0.15733737" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -442,13 +387,13 @@
       <window_info id="Favorites" order="6" sideWeight="0.5008183" side_tool="true" weight="0.15733737" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.23240589" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.14893617" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.19639935" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3207856" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3289689" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50075644" side_tool="true" weight="0.19639935" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3289689" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -460,34 +405,6 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49918166" weight="0.15885022" />
-      <window_info id="Structure" order="1" sideWeight="0.5008183" side_tool="true" weight="0.15733737" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" sideWeight="0.5008183" side_tool="true" weight="0.15733737" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.23240589" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32569557" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3207856" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3289689" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3289689" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3289689" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" weight="0.32980332" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-    </layout-to-restore>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="started- util and coordinate classes" />
@@ -571,13 +488,6 @@
             <element signature="docComment;class#Comparable#0" />
             <element signature="docComment;method#compareTo#0;class#Comparable#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaMiniProject2019.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -739,49 +649,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../Semester B/מיני פרוייקט מבוא להנדסת תוכנה/JavaMiniProject2019/מיני פרוייקט מבוא להנדסת תוכנה.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/primitives/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="48" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
-          <folding>
-            <element signature="e#89#90#0" expanded="true" />
-            <element signature="e#114#115#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/primitives/Material.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="37" column="40" selection-start-line="37" selection-start-column="40" selection-end-line="37" selection-end-column="40" />
-          <folding>
-            <element signature="method#Material#0;class#Material#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/primitives/Util.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-          <folding>
-            <element signature="e#487#556#0" />
-            <element signature="method#usubtract#0;class#Util#0" />
-            <element signature="e#926#979#0" />
-            <element signature="e#1066#1119#0" />
-            <element signature="method#uadd#0;class#Util#0" />
-            <element signature="e#1538#1591#0" />
-            <element signature="e#1678#1731#0" />
-            <element signature="method#uscale#0;class#Util#0" />
-            <element signature="e#2432#2433#0" expanded="true" />
-            <element signature="e#2495#2496#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../Semester B/מיני פרוייקט מבוא להנדסת תוכנה/JavaMiniProject2019/מיני פרוייקט מבוא להנדסת תוכנה.iml" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/text/NumberFormat.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="70">
@@ -789,82 +657,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="147" column="37" lean-forward="true" selection-start-line="147" selection-start-column="4" selection-end-line="147" selection-end-column="37" />
-          <folding>
-            <element signature="docComment;class#Object#0" />
-            <element signature="initializer##0;class#Object#0" />
-            <element signature="docComment;method#getClass#0;class#Object#0" />
-            <element signature="docComment;method#hashCode#0;class#Object#0" />
-            <element signature="docComment;method#equals#0;class#Object#0" />
-            <element signature="docComment;method#clone#0;class#Object#0" />
-            <element signature="docComment;method#toString#0;class#Object#0" />
-            <element signature="e#10065#10066#0" expanded="true" />
-            <element signature="e#10148#10149#0" expanded="true" />
-            <element signature="docComment;method#notify#0;class#Object#0" />
-            <element signature="docComment;method#notifyAll#0;class#Object#0" />
-            <element signature="docComment;method#wait#0;class#Object#0" />
-            <element signature="docComment;method#wait#1;class#Object#0" />
-            <element signature="method#wait#1;class#Object#0" />
-            <element signature="e#20682#20770#1" />
-            <element signature="e#20813#20946#1" />
-            <element signature="e#20971#21005#1" />
-            <element signature="docComment;method#wait#2;class#Object#0" />
-            <element signature="method#wait#2;class#Object#0" />
-            <element signature="docComment;method#finalize#0;class#Object#0" />
-            <element signature="method#finalize#0;class#Object#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/primitives/VectorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="107" column="22" selection-start-line="107" selection-start-column="22" selection-end-line="107" selection-end-column="22" />
-          <folding>
-            <element signature="method#add#0;class#VectorTest#0" />
-            <element signature="method#subtract#0;class#VectorTest#0" />
-            <element signature="method#scale#0;class#VectorTest#0" />
-            <element signature="method#crossProduct#0;class#VectorTest#0" />
-            <element signature="method#length#0;class#VectorTest#0" />
-            <element signature="method#normalize#0;class#VectorTest#0" />
-            <element signature="method#dotProduct#0;class#VectorTest#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/primitives/Coordinate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="63" column="56" selection-start-line="54" selection-start-column="4" selection-end-line="63" selection-end-column="56" />
-          <folding>
-            <element signature="method#Coordinate#0;class#Coordinate#0" />
-            <element signature="method#Coordinate#1;class#Coordinate#0" />
-            <element signature="method#setCoordinate#0;class#Coordinate#0" />
-            <element signature="docComment;method#equals#0;class#Coordinate#0" />
-            <element signature="method#equals#0;class#Coordinate#0" />
-            <element signature="docComment;method#compareTo#0;class#Coordinate#0" />
-            <element signature="method#compareTo#0;class#Coordinate#0" />
-            <element signature="docComment;method#subtract#0;class#Coordinate#0" />
-            <element signature="docComment;method#add#0;class#Coordinate#0" />
-            <element signature="docComment;method#scale#0;class#Coordinate#0" />
-            <element signature="docComment;method#multiply#0;class#Coordinate#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/primitives/Point3DTestTemp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/primitives/Point3DTestTemp.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="121">
@@ -1073,9 +866,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="381" column="48" selection-start-line="270" selection-start-column="10" selection-end-line="381" selection-end-column="48" />
+          <folding>
+            <element signature="docComment;class#Object#0" />
+            <element signature="initializer##0;class#Object#0" />
+            <element signature="docComment;method#getClass#0;class#Object#0" />
+            <element signature="docComment;method#hashCode#0;class#Object#0" />
+            <element signature="docComment;method#equals#0;class#Object#0" />
+            <element signature="e#5748#5749#0" expanded="true" />
+            <element signature="e#5784#5785#0" expanded="true" />
+            <element signature="docComment;method#clone#0;class#Object#0" />
+            <element signature="docComment;method#toString#0;class#Object#0" />
+            <element signature="e#10065#10066#0" expanded="true" />
+            <element signature="e#10148#10149#0" expanded="true" />
+            <element signature="docComment;method#notify#0;class#Object#0" />
+            <element signature="docComment;method#notifyAll#0;class#Object#0" />
+            <element signature="docComment;method#wait#0;class#Object#0" />
+            <element signature="docComment;method#wait#1;class#Object#0" />
+            <element signature="method#wait#1;class#Object#0" />
+            <element signature="e#20682#20770#1" />
+            <element signature="e#20813#20946#1" />
+            <element signature="e#20971#21005#1" />
+            <element signature="docComment;method#wait#2;class#Object#0" />
+            <element signature="method#wait#2;class#Object#0" />
+            <element signature="docComment;method#finalize#0;class#Object#0" />
+            <element signature="method#finalize#0;class#Object#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/primitives/Point3DTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/primitives/VectorTest.java" />
     <entry file="file://$PROJECT_DIR$/src/primitives/Point2D.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
+        <state relative-caret-position="578">
           <caret line="80" column="5" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
           <folding>
             <element signature="method#Point2D#0;class#Point2D#0" />
@@ -1087,28 +914,18 @@
             <element signature="method#setY#0;class#Point2D#0" />
             <element signature="docComment;method#compareTo#0;class#Point2D#0" />
             <element signature="method#compareTo#0;class#Point2D#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/primitives/Point3DTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3366">
-          <caret line="291" column="2" lean-forward="true" selection-start-line="291" selection-start-column="2" selection-end-line="291" selection-end-column="2" />
-          <folding>
-            <element signature="method#compareTo#0;class#Point3DTest#0" />
-            <element signature="method#testToString#0;class#Point3DTest#0" />
-            <element signature="method#add#0;class#Point3DTest#0" />
-            <element signature="method#subtract#0;class#Point3DTest#0" />
-            <element signature="method#distance#0;class#Point3DTest#0" />
+            <element signature="docComment;method#toString#0;class#Point2D#0" />
+            <element signature="method#toString#0;class#Point2D#0" />
+            <element signature="docComment;method#distance#0;class#Point2D#0" />
+            <element signature="method#distance#0;class#Point2D#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/primitives/Point3D.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="46" column="56" lean-forward="true" selection-start-line="35" selection-start-column="4" selection-end-line="46" selection-end-column="56" />
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding>
             <element signature="method#Point3D#0;class#Point3D#0" />
             <element signature="method#Point3D#1;class#Point3D#0" />
@@ -1116,6 +933,7 @@
             <element signature="method#Point3D#3;class#Point3D#0" />
             <element signature="method#getZ#0;class#Point3D#0" />
             <element signature="method#setZ#0;class#Point3D#0" />
+            <element signature="docComment;method#compareTo#0;class#Point3D#0" />
             <element signature="method#compareTo#0;class#Point3D#0" />
             <element signature="docComment;method#toString#0;class#Point3D#0" />
             <element signature="docComment;method#divide#0;class#Point3D#0" />
@@ -1127,8 +945,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/primitives/Ray.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="60" column="56" lean-forward="true" selection-start-line="51" selection-start-column="3" selection-end-line="60" selection-end-column="56" />
+        <state relative-caret-position="408">
+          <caret line="51" column="4" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="4" />
           <folding>
             <element signature="method#Ray#0;class#Ray#0" />
             <element signature="method#Ray#1;class#Ray#0" />
@@ -1137,16 +955,86 @@
             <element signature="method#setDirection#0;class#Ray#0" />
             <element signature="method#getDirection#0;class#Ray#0" />
             <element signature="method#getPOO#0;class#Ray#0" />
+            <element signature="docComment;method#compareTo#0;class#Ray#0" />
             <element signature="method#compareTo#0;class#Ray#0" />
+            <element signature="docComment;method#toString#0;class#Ray#0" />
             <element signature="n#!!block;n#toString#0;n#Ray#0" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/primitives/Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+          <folding>
+            <element signature="e#487#556#0" />
+            <element signature="method#usubtract#0;class#Util#0" />
+            <element signature="e#926#979#0" />
+            <element signature="e#1066#1119#0" />
+            <element signature="method#uadd#0;class#Util#0" />
+            <element signature="e#1538#1591#0" />
+            <element signature="e#1678#1731#0" />
+            <element signature="method#uscale#0;class#Util#0" />
+            <element signature="e#2432#2433#0" expanded="true" />
+            <element signature="e#2495#2496#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/primitives/Coordinate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="47" column="23" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
+          <folding>
+            <element signature="method#Coordinate#0;class#Coordinate#0" />
+            <element signature="method#Coordinate#1;class#Coordinate#0" />
+            <element signature="method#setCoordinate#0;class#Coordinate#0" />
+            <element signature="docComment;method#equals#0;class#Coordinate#0" />
+            <element signature="method#equals#0;class#Coordinate#0" />
+            <element signature="docComment;method#toString#0;class#Coordinate#0" />
+            <element signature="docComment;method#compareTo#0;class#Coordinate#0" />
+            <element signature="method#compareTo#0;class#Coordinate#0" />
+            <element signature="docComment;method#subtract#0;class#Coordinate#0" />
+            <element signature="docComment;method#add#0;class#Coordinate#0" />
+            <element signature="docComment;method#scale#0;class#Coordinate#0" />
+            <element signature="docComment;method#multiply#0;class#Coordinate#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/primitives/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="48" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
+          <folding>
+            <element signature="e#89#90#0" expanded="true" />
+            <element signature="e#147#148#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/primitives/Material.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="37" column="40" selection-start-line="37" selection-start-column="40" selection-end-line="37" selection-end-column="40" />
+          <folding>
+            <element signature="method#Material#0;class#Material#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaMiniProject2019.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/primitives/Vector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="32" column="4" lean-forward="true" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+        <state relative-caret-position="255">
+          <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
           <folding>
             <element signature="n#!!block;n#Vector#0;n#Vector#0" />
             <element signature="n#!!block;n#Vector#1;n#Vector#0" />
@@ -1155,17 +1043,103 @@
             <element signature="method#getHead#0;class#Vector#0" />
             <element signature="method#setHead#0;class#Vector#0" />
             <element signature="e#883#942#0" />
+            <element signature="docComment;method#compareTo#0;class#Vector#0" />
             <element signature="method#compareTo#0;class#Vector#0" />
+            <element signature="docComment;method#toString#0;class#Vector#0" />
             <element signature="n#!!block;n#toString#0;n#Vector#0" />
+            <element signature="docComment;method#equals#0;class#Vector#0" />
             <element signature="method#equals#0;class#Vector#0" />
-            <element signature="e#1824#1879#0" />
+            <element signature="e#3032#3087#0" />
+            <element signature="docComment;method#add#0;class#Vector#0" />
             <element signature="method#add#0;class#Vector#0" />
+            <element signature="docComment;method#subtract#0;class#Vector#0" />
             <element signature="method#subtract#0;class#Vector#0" />
+            <element signature="docComment;method#scale#0;class#Vector#0" />
             <element signature="method#scale#0;class#Vector#0" />
+            <element signature="docComment;method#crossProduct#0;class#Vector#0" />
             <element signature="method#crossProduct#0;class#Vector#0" />
+            <element signature="docComment;method#length#0;class#Vector#0" />
             <element signature="method#length#0;class#Vector#0" />
+            <element signature="docComment;method#normalize#0;class#Vector#0" />
             <element signature="method#normalize#0;class#Vector#0" />
+            <element signature="docComment;method#dotProduct#0;class#Vector#0" />
             <element signature="method#dotProduct#0;class#Vector#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tests/Point3DTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#compareTo#0;class#Point3DTest#0" />
+            <element signature="method#testToString#0;class#Point3DTest#0" />
+            <element signature="method#add#0;class#Point3DTest#0" />
+            <element signature="method#subtract#0;class#Point3DTest#0" />
+            <element signature="method#distance#0;class#Point3DTest#0" />
+            <element signature="e#3512#3532#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tests/VectorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#add#0;class#VectorTest#0" />
+            <element signature="method#subtract#0;class#VectorTest#0" />
+            <element signature="method#scale#0;class#VectorTest#0" />
+            <element signature="method#crossProduct#0;class#VectorTest#0" />
+            <element signature="method#length#0;class#VectorTest#0" />
+            <element signature="method#normalize#0;class#VectorTest#0" />
+            <element signature="method#dotProduct#0;class#VectorTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Geometries/Triangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="37" column="6" selection-start-line="37" selection-start-column="6" selection-end-line="37" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Geometries/Geometry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Geometries/RadialGeometry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <folding>
+            <element signature="n#!!block;n#RadialGeometry#0;n#RadialGeometry#0" />
+            <element signature="n#!!block;n#RadialGeometry#1;n#RadialGeometry#0" />
+            <element signature="n#!!block;n#getRadius#0;n#RadialGeometry#0" />
+            <element signature="n#!!block;n#setRadius#0;n#RadialGeometry#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tests/GeometriesTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

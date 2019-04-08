@@ -1,6 +1,6 @@
-package primitives;
-
+package Tests;
 import org.junit.jupiter.api.Test;
+import primitives.Vector;
 
 import java.text.DecimalFormat;
 
@@ -102,7 +102,7 @@ class VectorTest {
         //Then
         assertTrue(v1.equals(new Vector(1/lengthV1,2/lengthV1,3/lengthV1)));
         assertTrue(v2.equals(new Vector(2.3/lengthV2,1.2/lengthV2,6/lengthV2)));
-       }
+    }
 
     @Test
     void dotProduct() {

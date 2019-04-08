@@ -1,5 +1,4 @@
 package primitives;
-import primitives.Vector;
 
 public class Point3D extends Point2D// implements Comparable<Point3D>
 {
