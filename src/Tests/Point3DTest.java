@@ -80,20 +80,18 @@ class Point3DTest {
         //Given
         Point3D p1 = new Point3D(1, 2, 3);
         Point3D p2 = new Point3D(1.87, 22, 1);
-        Vector vec1Test = new Vector(p1);
-        Vector vec2Test = new Vector(1.999, 2.0, 6.54);
 
         //When
-        Point3D res1 = p1.subtract(vec1Test);
-        Point3D res2 = p1.subtract(vec2Test);
-        Point3D res3 = p2.subtract(vec1Test);
-        Point3D res4 = p2.subtract(vec2Test);
+        Vector res1 = p1.subtract(p1);
+        Vector res2 = p1.subtract(p2);
+        Vector res3 = p2.subtract(p1);
+        Vector res4 = p2.subtract(p2);
 
         //Then
-        assertTrue(res1.compareTo(new Point3D(0, 0, 0)) == 0);
-        assertTrue(res2.compareTo(new Point3D(1 - 1.999, 0, 3 - 6.54)) == 0);
-        assertTrue(res3.compareTo(new Point3D(0.87, 20, -2)) == 0);
-        assertTrue(res4.compareTo(new Point3D(1.87 - 1.999, 20, 1 - 6.54)) == 0);
+        assertTrue(res1.compareTo(new Vector(0, 0, 0)) == 0);
+        assertTrue(res2.compareTo(new Vector(1 - 1.87, 2 - 22, 3 - 1)) == 0);
+        assertTrue(res3.compareTo(new Vector(0.87, 20, -2)) == 0);
+        assertTrue(res4.compareTo(new Vector(0, 0, 0)) == 0);
     }
 
     @Test
@@ -150,10 +148,10 @@ class Point3DTest {
   @Test
    public void Test04() {
        System.out.println("Test04: Point3D subtract");
-       Vector vector = new Vector(1.0, 2.0, 3.0);
+       Point3D point1 = new Vector(1.0, 2.0, 3.0);
        Point3D instance1 = new Point3D(4.0, 5.0, 6.0);
-       Point3D instance = instance1.subtract(vector);
-       assertTrue(instance.compareTo(new Point3D(3.0, 3.0, 3.0)) == 0, "Substruct failed! ");
+       Vector instance = instance1.subtract(point1);
+       assertTrue(instance.compareTo(new Vector(3.0, 3.0, 3.0)) == 0, "Substruct failed! ");
    }
 
   @Test

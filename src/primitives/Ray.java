@@ -2,9 +2,9 @@ package primitives;
 
 public class Ray implements Comparable<Ray>
 {
-    // Point of origin
+    // Point of origin: first point
     private Point3D _POO;
-    // Ray direction
+    // Ray direction: second point
     private Vector _direction;
 
     // ***************** Constructors ********************** //
@@ -36,18 +36,18 @@ public class Ray implements Comparable<Ray>
      * RETURN VALUE
      *  An integer value
      * MEANING
-     *  Function that compares between two Ray objects:
+     *  Function that compares between the length two Ray objects:
      *      the function returns 0 if the Rays are equal
-     *      the function returns a negative value if the first object is smaller than the second
      *      the function returns a positive value if the first object is bigger than the second
+     *      the function returns a negative value if the first object is smaller than the second
      **************************************************/
     @Override
     public int compareTo(Ray ray){//todo: compareTo function in ray its not logically right, to fix also the 'MEANING' of the func
-        if(this._POO.distance(ray._POO) > 0 )
+        if(this._direction.length() > ray._direction.length() )
             return 1;
-        if(this._POO.distance(ray._POO) < 0 )
+        if(this._direction.length() < ray._direction.length() )
             return -1;
-        return 0; // in case they are equal
+        return 0; // in case they are equally big
     }
     /*************************************************
      * FUNCTION

@@ -29,7 +29,6 @@ public class Vector implements Comparable<Vector>
     public void setHead(Point3D head) { _head = head; }
 
     // ***************** Administration ******************** //
-    //todo: comments here
     /*************************************************
      * FUNCTION
      *  compareTo
@@ -45,9 +44,9 @@ public class Vector implements Comparable<Vector>
      **************************************************/
     @Override
     public int compareTo(Vector vector){
-        if(this._head.distance(new Point3D(0,0,0)) > vector._head.distance(new Point3D(0,0,0)) )
+        if(this.length() > vector.length() )
             return 1;
-        if(this._head.distance(new Point3D(0,0,0)) < vector._head.distance(new Point3D(0,0,0)) )
+        if(this.length() < vector.length() )
             return -1;
         return 0; // in case they are equal
     }
@@ -87,7 +86,6 @@ public class Vector implements Comparable<Vector>
     }
 
     // ***************** Operations ******************** //
-    //todo: comments here
     /*************************************************
      * FUNCTION
      *  add

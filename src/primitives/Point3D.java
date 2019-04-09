@@ -105,11 +105,11 @@ public class Point3D extends Point2D// implements Comparable<Point3D>
      * MEANING
      *  This functions subtracts a Vector to the Point3D and creates a new Point3D with the result
      **************************************************/
-    public Point3D subtract(Vector vector){
-        Point3D toReturn = new Point3D();
-        toReturn._x = this._x.subtract(vector.getHead()._x);
-        toReturn._y = this._y.subtract(vector.getHead()._y);
-        toReturn._z = this._z.subtract(vector.getHead()._z);
+    public Vector subtract(Point3D point){
+        Vector toReturn = new Vector();
+        toReturn.getHead()._x = this._x.subtract(point._x);
+        toReturn.getHead()._y = this._y.subtract(point._y);
+        toReturn.getHead()._z = this._z.subtract(point._z);
         return toReturn;
     }
     /*************************************************
