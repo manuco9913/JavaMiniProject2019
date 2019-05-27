@@ -1,26 +1,24 @@
 package Geometries;
 
-import java.util.List;
 import java.awt.*;
-import primitives.*;
+import java.util.List;
 
-public abstract class Geometry
+import Primitives.*;
+
+public abstract class Geometry implements Intersectable
 {
     private Material _material = new Material();
-    private double _nShininess = 1;
     private Color _emmission = new Color(0, 0, 0);
 
-    //public abstract List<Point3D> FindIntersections (Ray ray);
-    public abstract Vector getNormal(Point3D point);
+    // ***************** Getters/Setters ********************** //
+    public Material getMaterial(){ return _material;}
+    public Color getEmmission(){ return _emmission;}
+    public void setMaterial(Material mat){_material = mat;}
+    public void setEmmission(Color emmission){
+        _emmission = emmission;
+    }
 
-//    public double getShininess();
-  //  public Material getMaterial();
-   // public Color getEmmission();
-    //public void setShininess(double n);
-   // public void setMaterial(Material _material);
-   // public void setEmmission(Color emmission);
-   // public void setKs(double ks);
-   // public void setKd(double kd);
-   // public void setKr(double Kr);
-    // public void setKt(double Kt);
+    // ***************** Operations ******************** //
+    public abstract List<Point3D> FindIntersections(Ray ray);
+    public abstract Vector getNormal(Point3D point);
 }

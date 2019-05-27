@@ -1,6 +1,6 @@
-package primitives;
+package Primitives;
 
-import static primitives.Coordinate.*;
+import static Primitives.Coordinate.*;
 
 public class Point2D implements Comparable<Point2D>
 {
@@ -33,10 +33,8 @@ public class Point2D implements Comparable<Point2D>
     /*************************************************
      * FUNCTION
      *  compareTo
-     * PARAMETERS
-     *  Point2D
-     * RETURN VALUE
-     *  An integer value
+     * @param point Point2D value
+     * @return An integer value
      * MEANING
      *  Function that compares between two Point2D objects:
      *      the function returns 0 if the Point2Ds are equal
@@ -53,10 +51,8 @@ public class Point2D implements Comparable<Point2D>
     /*************************************************
      * FUNCTION
      *  toString
-     * PARAMETERS
-     *  none
-     * RETURN VALUE
-     *  A string value that represents the object of type Point2D
+     * @param
+     * @return A string value that represents the object of type Point2D
      * MEANING
      *  This functions is used for the convertion: Point2D -> String
      **************************************************/
@@ -67,10 +63,8 @@ public class Point2D implements Comparable<Point2D>
     /*************************************************
      * FUNCTION
      *  distance
-     * PARAMETERS
-     *  Point2D secondPoint
-     * RETURN VALUE
-     *  A double value
+     * @param secondPoint Point2D value
+     * @return A double value
      * MEANING
      *  This functions calculates the distance between 'this' point2D and secondPoint
      **************************************************/

@@ -1,4 +1,4 @@
-package primitives;
+package Primitives;
 
 import java.text.DecimalFormat;
 
@@ -22,7 +22,15 @@ public class Vector implements Comparable<Vector>
         this._head._y.setCoordinate(yHead);
         this._head._z.setCoordinate(zHead);
     }
-    //public Vector(Point3D p1, Point3D p2); //todo: what is this used for??
+    public Vector(Point3D p1, Point3D p2) {
+        if (p1.equals(p2))
+            throw new IllegalArgumentException("pt1 == pt2!");
+        this.setHead(new Point3D(
+                p2.getX().subtract(p1.getX()),
+                p2.getY().subtract(p1.getY()),
+                p2.getZ().subtract(p1.getZ())));
+    }
+
 
     // ***************** Getters/Setters ********************** //
     public Point3D getHead(){ return _head; }
@@ -32,10 +40,8 @@ public class Vector implements Comparable<Vector>
     /*************************************************
      * FUNCTION
      *  compareTo
-     * PARAMETERS
-     *  Vector
-     * RETURN VALUE
-     *  An integer value
+     * @param vector Vector value
+     * @return An integer value
      * MEANING
      *  Function that compares between two Vectors objects:
      *      the function returns 0 if the Vectors are equal
@@ -53,24 +59,20 @@ public class Vector implements Comparable<Vector>
     /*************************************************
      * FUNCTION
      *  toString
-     * PARAMETERS
-     *  none
-     * RETURN VALUE
-     *  A string value that represents the object of type Vector
+     * @param
+     * @return A string value that represents the object of type Vector
      * MEANING
      *  This functions is used for the convertion: Vector -> String
      **************************************************/
     @Override
     public String toString(){
-        return "[" + _head._x + "," + _head._y + "," + _head._z + "]";
+        return "(" + _head._x + ", " + _head._y + ", " + _head._z + ")";
     } //[x,y,z]
     /*************************************************
      * FUNCTION
      *  equals
-     * PARAMETERS
-     *  Vector
-     * RETURN VALUE
-     *  An boolean value
+     * @param obj Vector value
+     * @return A boolean value
      * MEANING
      *  Function that checks if two Vectors are equal, if so it returns true
      **************************************************/
@@ -89,10 +91,8 @@ public class Vector implements Comparable<Vector>
     /*************************************************
      * FUNCTION
      *  add
-     * PARAMETERS
-     *  Vector vector
-     * RETURN VALUE
-     *  A Vector value
+     * @param vector Vector value
+     * @return A Vector value
      * MEANING
      *  This functions adds a Vector to the Vector and creates a new Vector with the result
      **************************************************/
@@ -106,10 +106,8 @@ public class Vector implements Comparable<Vector>
     /*************************************************
      * FUNCTION
      *  subtract
-     * PARAMETERS
-     *  Vector vector
-     * RETURN VALUE
-     *  A Vector value
+     * @param vector Vector value
+     * @return A Vector value
      * MEANING
      *  This functions subtracts a Vector to the Vector and creates a new Vector with the result
      **************************************************/
@@ -123,10 +121,8 @@ public class Vector implements Comparable<Vector>
     /*************************************************
      * FUNCTION
      *  scale
-     * PARAMETERS
-     *  Double scalingFactor
-     * RETURN VALUE
-     *  A Vector value
+     * @param scalingFactor double value
+     * @return A Vector value
      * MEANING
      *  This functions scales a double to the Vector and creates a new Vector with the result
      **************************************************/
@@ -141,10 +137,8 @@ public class Vector implements Comparable<Vector>
     /*************************************************
      * FUNCTION
      *  crossProduct
-     * PARAMETERS
-     *  Vector vector
-     * RETURN VALUE
-     *  A Vector value
+     * @param vector
+     * @return A Vector value
      * MEANING
      *  This functions does crossProduct to the Vector and the parameter Vector and creates a new Vector with the result
      **************************************************/
@@ -161,10 +155,8 @@ public class Vector implements Comparable<Vector>
     /*************************************************
      * FUNCTION
      *  length
-     * PARAMETERS
-     *  none
-     * RETURN VALUE
-     *  A double value
+     *
+     * @return A double value
      * MEANING
      *  This functions calculates the length of the vector
      **************************************************/
@@ -172,16 +164,11 @@ public class Vector implements Comparable<Vector>
         DecimalFormat df = new DecimalFormat("#.##");
         double val = Math.sqrt(Math.pow((this._head._x)._coordinate,2) + Math.pow((this._head._y)._coordinate,2) +
                 Math.pow((this._head._z)._coordinate,2));
-        double p = Double.parseDouble(df.format(val));
-        return p;
+        return Double.parseDouble(df.format(val));
     }
     /*************************************************
      * FUNCTION
      *  normalize
-     * PARAMETERS
-     *  none
-     * RETURN VALUE
-     *  none
      * MEANING
      *  This functions normalizes the vector so that its size will be 1
      **************************************************/
@@ -194,10 +181,8 @@ public class Vector implements Comparable<Vector>
     /*************************************************
      * FUNCTION
      *  dotProduct
-     * PARAMETERS
-     *  Vector vector
-     * RETURN VALUE
-     *  A double value
+     * @param vector Vector value
+     * @return A double value
      * MEANING
      *  This functions does dotProduct to the Vector and the parameter Vector and returns the double value as a result
      **************************************************/
@@ -207,4 +192,16 @@ public class Vector implements Comparable<Vector>
                         _head._z.multiply(vector._head._z)).getCoordinate();
         return result;
     }
+
+/*
+    public void headIsSubtractPoints(Point3D pt1, Point3D pt2) {
+
+        if (pt1.equals(pt2))
+            throw new IllegalArgumentException("pt1 == pt2!");
+        this.setHead(new Point3D(
+                pt2.getX().subtract(pt1.getX()),
+                pt2.getY().subtract(pt1.getY()),
+                pt2.getZ().subtract(pt1.getZ())));
+    }
+*/
 }

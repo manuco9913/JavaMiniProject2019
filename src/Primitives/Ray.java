@@ -1,4 +1,4 @@
-package primitives;
+package Primitives;
 
 public class Ray implements Comparable<Ray>
 {
@@ -31,18 +31,16 @@ public class Ray implements Comparable<Ray>
     /*************************************************
      * FUNCTION
      *  compareTo
-     * PARAMETERS
-     *  Ray ray
-     * RETURN VALUE
-     *  An integer value
+     * @param ray Ray value
+     * @return An integer value
      * MEANING
      *  Function that compares between the length two Ray objects:
      *      the function returns 0 if the Rays are equal
-     *      the function returns a positive value if the first object is bigger than the second
-     *      the function returns a negative value if the first object is smaller than the second
+     *      the function returns a positive value if the first ray is bigger than the second
+     *      the function returns a negative value if the first ray is smaller than the second
      **************************************************/
     @Override
-    public int compareTo(Ray ray){//todo: compareTo function in ray its not logically right, to fix also the 'MEANING' of the func
+    public int compareTo(Ray ray){
         if(this._direction.length() > ray._direction.length() )
             return 1;
         if(this._direction.length() < ray._direction.length() )
@@ -52,10 +50,8 @@ public class Ray implements Comparable<Ray>
     /*************************************************
      * FUNCTION
      *  toString
-     * PARAMETERS
-     *  none
-     * RETURN VALUE
-     *  A string value that represents the object of type Ray
+     * @param
+     * @return A string value that represents the object of type Ray
      * MEANING
      *  This functions is used for the convertion: Ray -> String
      **************************************************/

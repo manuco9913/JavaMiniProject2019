@@ -1,6 +1,6 @@
-package primitives;
+package Primitives;
 
-import static primitives.Util.*;
+import static Primitives.Util.*;
 
 /*
  * Coordinate class represents a coordinate on the axis.
@@ -36,29 +36,25 @@ public final class Coordinate implements Comparable<Coordinate>
     /*************************************************
      * FUNCTION
      *  equals
-     * PARAMETERS
-     *  object – obj to check if is equal
-     * RETURN VALUE
-     *  A boolean value that indicates whether the objects are equal
+     * @param obj to check if is equal
+     * @return A boolean value that indicates whether the objects are equal
      * MEANING
      *  In this functions: if the subtraction of the two objects equals to zero, it returns true.
      *  function used to equalize two Coordinates.
      **************************************************/
     @Override
     public boolean equals(Object obj) {
-        if (this == obj) return true;
-        if (obj == null) return false;
-        if (!(obj instanceof Coordinate)) return false;
-        return usubtract(_coordinate, ((Coordinate)obj)._coordinate) == 0.0;
+            if (this == obj) return true;
+            if (obj == null) return false;
+            if (!(obj instanceof Coordinate)) return false;
+            return usubtract(_coordinate, ((Coordinate)obj)._coordinate) == 0.0;
     }
 
     /*************************************************
      * FUNCTION
      *  toString
-     * PARAMETERS
-     *  none
-     * RETURN VALUE
-     *  A string value that represents the object of type Coordinate
+     * @param
+     * @return A string value that represents the object of type Coordinate
      * MEANING
      *  This functions is used for the convertion: Coordinate -> String
      **************************************************/
@@ -70,9 +66,8 @@ public final class Coordinate implements Comparable<Coordinate>
     /*************************************************
      * FUNCTION
      *  compareTo
-     * PARAMETERS
-     *  Coordinate coord
-     * RETURN VALUE
+     * @param coord Coordinate value
+     * @return
      *  the function returns 0 if the Coordinates have the same size
      *  the function returns a positive value if the coordinate is smaller than 'this'
      *  the function returns a negative value if the coordinate is bigger than 'this'
@@ -91,10 +86,8 @@ public final class Coordinate implements Comparable<Coordinate>
     /*************************************************
      * FUNCTION
      *  subtract
-     * PARAMETERS
-     *  Coordinate other
-     * RETURN VALUE
-     *  subtracted Coordinate
+     * @param other Coordinate value
+     * @return subtracted Coordinate
      * MEANING
      *  Function subtracts two Coordinates returning a new one with the corresponding value
      *  the function uses a Util.java function for a more specific subtraction
@@ -106,10 +99,8 @@ public final class Coordinate implements Comparable<Coordinate>
     /*************************************************
      * FUNCTION
      *  add
-     * PARAMETERS
-     *  Coordinate other
-     * RETURN VALUE
-     *  added Coordinate
+     * @param other Coordinate value
+     * @return added Coordinate
      * MEANING
      *  Function adds two Coordinates returning a new one with the corresponding value
      *  the function uses a Util.java function for a more specific addition
@@ -121,10 +112,8 @@ public final class Coordinate implements Comparable<Coordinate>
     /*************************************************
      * FUNCTION
      *  scale
-     * PARAMETERS
-     *  double num
-     * RETURN VALUE
-     *  scaled Coordinate
+     * @param num double value
+     * @return scaled Coordinate
      * MEANING
      *  Function scales two Coordinates returning a new one with the corresponding value
      *  the function uses a Util.java function for a more specific scaling
@@ -135,11 +124,9 @@ public final class Coordinate implements Comparable<Coordinate>
 
     /*************************************************
      * FUNCTION
-     *  mutiply
-     * PARAMETERS
-     *  Coordinate other
-     * RETURN VALUE
-     *  multiplied Coordinate
+     *  multiply
+     * @param other Coordinate value
+     * @return multiplied Coordinate
      * MEANING
      *  Function multiplies two Coordinates returning a new one with the corresponding value
      *  the function uses a Util.java function for a more specific multiplication

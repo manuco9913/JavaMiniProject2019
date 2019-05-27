@@ -1,4 +1,4 @@
-package primitives;
+package Primitives;
 
 public class Point3D extends Point2D// implements Comparable<Point3D>
 {
@@ -35,10 +35,8 @@ public class Point3D extends Point2D// implements Comparable<Point3D>
     /*************************************************
      * FUNCTION
      *  compareTo
-     * PARAMETERS
-     *  Point3D
-     * RETURN VALUE
-     *  An integer value
+     * @param point3D Point3D value
+     * @return An integer value
      * MEANING
      *  Function that compares between two Point3D objects:
      *      the function returns 0 if the Point3Ds are equal
@@ -53,10 +51,8 @@ public class Point3D extends Point2D// implements Comparable<Point3D>
     /*************************************************
      * FUNCTION
      *  toString
-     * PARAMETERS
-     *  none
-     * RETURN VALUE
-     *  A string value that represents the object of type Point3D
+     * @param
+     * @return A string value that represents the object of type Point3D
      * MEANING
      *  This functions is used for the convertion: Point3D -> String
      **************************************************/
@@ -66,42 +62,36 @@ public class Point3D extends Point2D// implements Comparable<Point3D>
     /*************************************************
      * FUNCTION
      *  divide
-     * PARAMETERS
-     *  double div
-     * RETURN VALUE
-     *  none
+     * @param div double value
+     * @return nothing
      * MEANING
      *  This functions divides all the Coordinates of the Point3D by the div value
      **************************************************/
     public void divide(double div){
-        this._x._coordinate /= div;
-        this._y._coordinate /= div;
-        this._z._coordinate /= div;
+        this._x._coordinate = this._x._coordinate/div;
+        this._y._coordinate = this._y._coordinate/div;
+        this._z._coordinate = this._z._coordinate/div;
     }
     /*************************************************
      * FUNCTION
      *  add
-     * PARAMETERS
-     *  Vector vector
-     * RETURN VALUE
-     *  A Point3D value
+     * @param vector Vector value
+     * @return A Point3D value
      * MEANING
      *  This functions adds a Vector to the Point3D and creates a new Point3D with the result
      **************************************************/
     public Point3D add(Vector vector){
         Point3D toReturn = new Point3D();
-        toReturn._x = this._x.add(vector.getHead()._x);
-        toReturn._y = this._y.add(vector.getHead()._y);
-        toReturn._z = this._z.add(vector.getHead()._z);
+        toReturn.setX(this._x.add(vector.getHead()._x));
+        toReturn.setY(this._y.add(vector.getHead()._y));
+        toReturn.setZ(this._z.add(vector.getHead()._z));
         return toReturn;
     }
     /*************************************************
      * FUNCTION
      *  subtract
-     * PARAMETERS
-     *  Vector vector
-     * RETURN VALUE
-     *  A Point3D value
+     * @param point Point3D value
+     * @return A Point3D value
      * MEANING
      *  This functions subtracts a Vector to the Point3D and creates a new Point3D with the result
      **************************************************/
@@ -115,10 +105,8 @@ public class Point3D extends Point2D// implements Comparable<Point3D>
     /*************************************************
      * FUNCTION
      *  distance
-     * PARAMETERS
-     *  Point3D point
-     * RETURN VALUE
-     *  A double value
+     * @param point Point3D value
+     * @return A double value
      * MEANING
      *  This functions calculates the distance between 'this' point2D and point
      **************************************************/

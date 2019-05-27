@@ -1,4 +1,4 @@
-package primitives;
+package Primitives;
 
 public abstract class Util
 {

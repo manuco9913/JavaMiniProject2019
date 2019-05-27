@@ -1,10 +1,12 @@
 package Geometries;
 
-import primitives.*;
+import Primitives.*;
 
 public abstract class RadialGeometry extends Geometry
 {
     protected double _radius;
+
+    // ***************** Constructors ********************** //
     public RadialGeometry(){
         _radius = 0.0;
     }
@@ -15,6 +17,7 @@ public abstract class RadialGeometry extends Geometry
         this._radius = rg._radius;
     }
 
+    // ***************** Getters/Setters ********************** //
     public double getRadius(){
         return _radius;
     }
@@ -22,5 +25,6 @@ public abstract class RadialGeometry extends Geometry
         _radius = radius;
     }
 
+    // ***************** Operations ******************** //
     public abstract Vector getNormal(Point3D point);
 }

@@ -1,7 +1,5 @@
 package Tests;
-import primitives.Coordinate;
-import primitives.Point3D;
-import primitives.Vector;
+import Primitives.*;
 import org.junit.jupiter.api.*;
 import java.text.DecimalFormat;
 

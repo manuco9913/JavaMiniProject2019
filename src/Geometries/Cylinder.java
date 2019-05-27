@@ -1,47 +1,51 @@
 package Geometries;
 
-import primitives.*;
+import Primitives.*;
 import java.util.List;
 
-public class Cylinder extends RadialGeometry
-{
-    private Point3D _axisPoint;
-    private Vector _axisDirection;
+public class Cylinder extends Tube {
+
+    private double _height;
 
     // ***************** Constructors ********************** //
-    public Cylinder(){
+    public Cylinder() {
         super();
-        _axisPoint = new Point3D();
-        _axisDirection = new Vector();
+        _height = 0.0;
     }
-    public Cylinder(Cylinder cylinder){
+
+    public Cylinder(Cylinder cylinder) {
         _radius = cylinder._radius;
         _axisPoint = cylinder._axisPoint;
         _axisDirection = cylinder._axisDirection;
+        _height = cylinder._height;
     }
-    public Cylinder(double radius, Point3D axisPoint, Vector axisDirection){
+
+    public Cylinder(double radius, Point3D axisPoint, Vector axisDirection, double height) {
         this._radius = radius;
         _axisPoint = axisPoint;
         _axisDirection = axisDirection;
+        _height = height;
     }
 
     // ***************** Getters/Setters ********************** //
-    public Point3D getAxisPoint(){ return _axisPoint;}
-    public Vector getAxisDirection(){return _axisDirection;}
-    public void setAxisPoint(Point3D axisPoint){_axisPoint = axisPoint;}
-    public void setAxisDirection(Vector axisDirection){ _axisDirection = axisDirection;}
+    public double getHeight() {
+        return _height;
+    }
+
+    public void setHeight(double h) {
+        _height = h;
+    }
 
     // ***************** Operations ******************** //
-    //@Override
-    //public List<Point3D> FindIntersections(Ray ray);
+
+    /*************************************************
+     * FUNCTION
+     *  FindIntersections
+     * @param ray Ray value
+     * @return list of the points intersected by the sent ray
+     * MEANING
+     * todo: meaning
+     **************************************************/
     @Override
-    public Vector getNormal(Point3D point){
-        _axisDirection.normalize();//normalize the Cylinder vector
-        Vector v2 = point.subtract(_axisPoint);//v2 is the "diagonal"
-        double height = v2.dotProduct(_axisDirection);//height of "point" from "_axisPoint"
-        Point3D p2 = _axisPoint.add(_axisDirection.scale(height));// p2 = axisPoint + [axisDirection(normalized) * height]
-        Vector v3 = point.subtract(p2);
-        v3.normalize();
-        return v3;
-    }
+    public List<Point3D> FindIntersections(Ray ray){return null;}
 }

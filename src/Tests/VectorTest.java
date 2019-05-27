@@ -1,6 +1,6 @@
 package Tests;
 import org.junit.jupiter.api.Test;
-import primitives.Vector;
+import Primitives.Vector;
 
 import java.text.DecimalFormat;
 
