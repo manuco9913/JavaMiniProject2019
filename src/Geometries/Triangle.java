@@ -78,14 +78,14 @@ public class Triangle extends FlatGeometry implements Intersectable {
   @Override
     public List<Point3D> FindIntersections(Ray ray) {
 //works
-      if (getNormal(_p2).length() == 0) {
+      if (getNormal(_p2).length() == 0)
           return new ArrayList<>();
-      }
+
       Plane intersectionHelp = new Plane(getNormal(_p2), _p2);
       ArrayList<Point3D> intersectionPoints = (ArrayList<Point3D>) (intersectionHelp.FindIntersections(ray));
-      if (intersectionPoints.isEmpty()) {
+
+      if (intersectionPoints.isEmpty())
           return new ArrayList<>();
-      }
 
       Point3D intersectionPoint3D = intersectionPoints.get(0);
 
@@ -100,9 +100,8 @@ public class Triangle extends FlatGeometry implements Intersectable {
       double d2 = (new Vector(intersectionPoint3D, ray.getPOO())).dotProduct(n2);
       double d3 = (new Vector(intersectionPoint3D, ray.getPOO())).dotProduct(n3);
 
-      if (!((d1 > 0 && d2 > 0 && d3 > 0) || (d1 < 0 && d2 < 0 && d3 < 0))) {
+      if (!((d1 > 0 && d2 > 0 && d3 > 0) || (d1 < 0 && d2 < 0 && d3 < 0)))
           intersectionPoints = new ArrayList<>();
-      }
 
       return intersectionPoints;
   }

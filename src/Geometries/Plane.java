@@ -54,7 +54,6 @@ public class Plane extends FlatGeometry implements Intersectable
    public List<Point3D> FindIntersections(Ray ray){
 
        List<Point3D> intersectionPoint = new ArrayList<>();
-
        Vector N = _normal;
        Vector V = ray.getDirection();
 
@@ -69,8 +68,6 @@ public class Plane extends FlatGeometry implements Intersectable
            Point3D P = ray.getPOO().add(V);
            intersectionPoint.add(P);
        }
-
-
        return intersectionPoint;
    }
 }

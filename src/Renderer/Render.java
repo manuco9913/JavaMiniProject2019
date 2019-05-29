@@ -93,7 +93,6 @@ public class Render {
      * FUNCTION
      *  printGrid
      * @param interval the integer that indicates how many pixels to jump in order to color the grid
-     * @return
      * MEANING
      *  The function prints a white pixel at every "interval"
      **************************************************/
@@ -120,7 +119,7 @@ public class Render {
      * FUNCTION
      *  calcColor
      * @param geometry the geometry to get its emission light
-     * @param point
+     * @param point P
      * @return color value
      * MEANING
      *  calculates the color to print in the operation writeToImage()
@@ -138,7 +137,7 @@ public class Render {
      * FUNCTION
      *  calcColor
      * @param geometry the geometry to get its emission light
-     * @param point
+     * @param point P
      * @return color value
      * MEANING
      *  calculates the color to print in the operation writeToImage(), calls the recursive function at level 0
@@ -150,7 +149,7 @@ public class Render {
      * FUNCTION
      *  calcColor
      * @param geometry the geometry to get its emission light
-     * @param point
+     * @param point P
      * @return color value
      * MEANING
      *  calculates the color to print in the operation writeToImage() RECURSIVELY
@@ -225,7 +224,7 @@ public class Render {
      * @param inRay the ray
      * @return Ray value
      * MEANING
-     *  the
+     *  the function constructs the refraction ray by the formula
      **************************************************/
     private Ray constructRefractedRay(Geometry geometry, Point3D point, Ray inRay){
         Point3D P = new Point3D(point);
@@ -238,12 +237,12 @@ public class Render {
     /*************************************************
      * FUNCTION
      *  constructRefractedRay
-     * @param normal
-     * @param point
-     * @param inRay
+     * @param normal N
+     * @param point RayP0
+     * @param inRay Ray direction
      * @return Ray value
      * MEANING
-     *  calculates the ray that's reflected from the geometry
+     *  calculates the ray that's reflected from the geometry by the formula
      **************************************************/
     private Ray constructReflectedRay(Vector normal, Point3D point, Ray inRay) {
         Vector N = new Vector(normal);
@@ -268,18 +267,19 @@ public class Render {
     /*************************************************
      * FUNCTION
      *  constructRefractedRay
-     * @param geometry
-     * @param point
-     * @param light
+     * @param geometry we are working on
+     * @param point P
+     * @param light source of light
      * @return color value
      * MEANING
-     *  calculates the color to print in the operation writeToImage()
+     *  checks if between the light and the object there's another object
      **************************************************/
     private boolean occluded(LightSource light, Point3D point, Geometry geometry){
         Vector lightDirection = light.getL(point);
         lightDirection = lightDirection.scale(-1);
         Point3D geometryPoint = new Point3D(point);
         Vector tempVector = new Vector(geometry.getNormal(point));
+
         tempVector = tempVector.scale(2);
         geometryPoint = geometryPoint.add(tempVector);
         Ray lightRay = new Ray(geometryPoint, lightDirection);
@@ -297,15 +297,15 @@ public class Render {
     /*************************************************
      * FUNCTION
      *  constructRefractedRay
-     * @param ks
-     * @param l
-     * @param normal
-     * @param v
-     * @param shininess
-     * @param lightIntensity
+     * @param ks attenuation factor
+     * @param l l
+     * @param normal N
+     * @param v vector
+     * @param shininess of the geometry
+     * @param lightIntensity of the specific light
      * @return color value
      * MEANING
-     *  calculates the color to print in the operation writeToImage()
+     *  calculates the specular light of the specific light
      **************************************************/
     private Color calcSpecularComp(double ks, Vector v, Vector normal, Vector l, double shininess, Color lightIntensity) {
 
@@ -329,13 +329,13 @@ public class Render {
     /*************************************************
      * FUNCTION
      *  constructRefractedRay
-     * @param kd
-     * @param normal
-     * @param l
-     * @param lightIntensity
+     * @param kd attenuation factor
+     * @param normal N
+     * @param l L
+     * @param lightIntensity if the specific light
      * @return color value
      * MEANING
-     *  calculates the color to print in the operation writeToImage()
+     *  calculates the diffusion of the light on the touched area
      **************************************************/
     private Color calcDiffusiveComp(double kd, Vector normal, Vector l, Color lightIntensity) {
 
