@@ -2,9 +2,6 @@ package Elements;
 
 import Primitives.*;
 
-import java.util.Map;
-import java.util.Objects;
-
 public class Camera {
     //Eye point of the camera
     private Point3D _P0;
@@ -45,13 +42,17 @@ public class Camera {
         return _vUp;
     }
     public void set_vUp(Vector vUp) {
-        _vUp = vUp;
+        _vUp = new Vector(vUp);
+        _vUp.normalize();
+        _vRight = new Vector(_vUp.crossProduct(_vToward));
+        _vRight.normalize();
     }
     public Vector get_vTo() {
         return _vToward;
     }
     public void set_vTo(Vector vTo) {
         _vToward = vTo;
+        _vRight = new Vector(_vUp.crossProduct(_vToward));
     }
     public Point3D getP0() {
         return _P0;
