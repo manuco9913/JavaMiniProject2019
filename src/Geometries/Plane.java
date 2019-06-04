@@ -30,8 +30,8 @@ public class Plane extends FlatGeometry implements Intersectable
     public Vector getNormal(Point3D point){
         Vector v = new Vector(this._Q,point);
         boolean b = _normal.dotProduct(v)==0;
-        if(!b)
-            throw new ArithmeticException();
+//        if(!b)
+//            throw new ArithmeticException();
         return _normal;
     }
     public Point3D getQ(){ return _Q;}

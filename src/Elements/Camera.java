@@ -51,8 +51,10 @@ public class Camera {
         return _vToward;
     }
     public void set_vTo(Vector vTo) {
-        _vToward = vTo;
+        _vToward = new Vector(vTo);
+        _vToward.normalize();
         _vRight = new Vector(_vUp.crossProduct(_vToward));
+        _vRight.normalize();
     }
     public Point3D getP0() {
         return _P0;
