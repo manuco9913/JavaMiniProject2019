@@ -12,7 +12,7 @@ public class Camera {
 
     // ***************** Constructors ********************** //
     public Camera() {
-        _P0 = new Point3D(0, 0, 10);
+        _P0 = new Point3D(0, 0, 0);
         _vUp = new Vector(1, 0, 0);
         _vToward = new Vector(0, 0, -1);
         _vRight = new Vector(_vUp.crossProduct(_vToward));//(1,0,0)

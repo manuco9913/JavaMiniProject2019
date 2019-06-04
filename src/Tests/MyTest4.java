@@ -1,6 +1,8 @@
 package Tests;
 
+import Elements.DirectionalLight;
 import Elements.PointLight;
+import Elements.SpotLight;
 import Geometries.Plane;
 import Geometries.Sphere;
 import Geometries.Triangle;
@@ -11,6 +13,7 @@ import Renderer.Render;
 import Scene.Scene;
 import org.junit.jupiter.api.Test;
 
+import javax.swing.plaf.basic.BasicTreeUI;
 import java.awt.*;
 
 public class MyTest4 {
@@ -19,24 +22,42 @@ public class MyTest4 {
     void MyTest4() {
 
         Scene scene = new Scene();
-        scene.get_camera().setP0(new Point3D(0,0,400));
+        scene.get_camera().setP0(new Point3D(0,0,1000));
 //        scene.get_camera().set_vTo(new Vector(-1,0,-1));
 
-//        Plane base = new Plane(new Vector(1,0,1),new Point3D());
-        Plane base = new Plane(new Vector(10000,0,3000),new Point3D(-1000,0,-1000));
-        Plane roof = new Plane(new Vector(-500,0,-700),new Point3D(5000,0,0));
-        Plane back = new Plane(new Vector(0,0,1),new Point3D(0,0,-20000));
+        Plane back = new Plane(new Vector(0,0,1),new Point3D(0,0,-500));
+        Triangle tLeft = new Triangle(new Point3D(450,-330,-100),new Point3D(300,-150,0),
+                new Point3D(-900,0,-100));
+        Triangle tCentralLeft = new Triangle(new Point3D(300,-150,0),new Point3D(140,0,200),
+                new Point3D(-900,0,-100));
+        Triangle tCentralRight = new Triangle(new Point3D(140,0,200),new Point3D(300,150,0),
+                new Point3D(-900,0,-100));
+        Triangle tRight = new Triangle(new Point3D(300,150,0),new Point3D(450,330,-100),
+                new Point3D(-900,0,-100));
 
-        base.setEmmission(new Color(0, 98, 98));
-        roof.setEmmission(new Color(37, 99, 25));
-        back.setEmmission(new Color(181, 2,0));
 
-        scene.addGeometry(base);
-        scene.addGeometry(roof);
+        /////////
+        Sphere s = new Sphere(200,new Point3D(140,0,200));
+        s.setEmmission(new Color(255,0,0));
+        scene.addGeometry(s);
+        //////////
+        tLeft.setEmmission(new Color(7, 16, 7));
+        tCentralLeft.setEmmission(new Color(48, 180, 30));
+        tCentralRight.setEmmission(new Color(14, 29, 14));
+        tRight.setEmmission(new Color(180, 140, 63));
+
+        back.setEmmission(new Color(255, 255, 255));
+
         scene.addGeometry(back);
+        scene.addGeometry(tLeft);
+        scene.addGeometry(tCentralLeft);
+        scene.addGeometry(tCentralRight);
+        scene.addGeometry(tRight);
 
-        scene.addLight(new PointLight(new Color(74, 150, 109), new Point3D(0, 0, 0),
-                0, 0.000005, 0.0000008));
+        scene.addLight(new SpotLight(new Color(255, 252, 14), new Point3D(400, 1000, 500),
+                new Vector(-100,-100,-800),0, 0.000005, 0.00008));
+        scene.addLight(new DirectionalLight(new Color(28, 54, 195),new Vector(0,-100,-100)));
+
 
         ImageWriter imageWriter = new ImageWriter("MyTest4", 500, 500, 500, 500);
         Render render = new Render(imageWriter, scene);

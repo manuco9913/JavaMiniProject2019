@@ -14,6 +14,7 @@ public class Render {
     private Scene _scene;
     private ImageWriter _imageWriter;
     private final int RECURSION_LEVEL = 3;
+    private static final double EPSILON = 0.0001;
 
     // ***************** Constructors ********************** //
     public Render(ImageWriter imageWriter, Scene scene) {
@@ -227,12 +228,13 @@ public class Render {
      *  the function constructs the refraction ray by the formula
      **************************************************/
     private Ray constructRefractedRay(Geometry geometry, Point3D point, Ray inRay){
-        Point3D P = new Point3D(point);
-        Vector direction = new Vector(inRay.getDirection());
-        direction = direction.scale(2);
-        P = P.add(direction);
-        direction = direction.scale(0.5);
-        return new Ray(P,direction);
+//        Point3D P = new Point3D(point);
+//        Vector direction = new Vector(inRay.getDirection());
+//        direction = direction.scale(2);
+//        P = P.add(direction);
+//        direction = direction.scale(0.5);
+//        return new Ray(P,direction);
+        return new Ray(point.add(geometry.getNormal(point).scale(-EPSILON)), inRay.getDirection());
     }
     /*************************************************
      * FUNCTION
