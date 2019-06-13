@@ -22,7 +22,7 @@ class MyTest1 {
     void MyTest1() {
 
         Scene scene = new Scene();
-        scene.get_camera().setP0(new Point3D(-200, 0, 2500));
+        scene.get_camera().setP0(new Point3D(-200, 0, 300));//500
 
         Sphere sphere = new Sphere(200, new Point3D(300, -500, -250));
         Sphere sphere2 = new Sphere(300, new Point3D(350, -100, -600));
@@ -52,6 +52,7 @@ class MyTest1 {
         sphere.setEmmission(new Color(37, 26, 164));
         sphere2.setEmmission(new Color(144, 150, 146, 207));
         sphere3.setEmmission(new Color(255, 0, 0));
+//        sphere3.getMaterial().setKr(0.9);
 
 //        Plane plane = new Plane(new Vector(3000,0,3000),new Point3D(-1000,0,-1000));
 
@@ -72,7 +73,7 @@ class MyTest1 {
 //                new Vector(-1000, 700, 100), 0, 0.00000001, 0.0000005));
 //        scene.addLight((new DirectionalLight(new Color(111, 114, 4), new Vector(-1, 0, -1))));
 //
-        ImageWriter imageWriter = new ImageWriter("MyTest1-2500", 500, 500, 500, 500);
+        ImageWriter imageWriter = new ImageWriter("MyTest1-300", 500, 500, 500, 500);
 
         Render render = new Render(imageWriter, scene);
 

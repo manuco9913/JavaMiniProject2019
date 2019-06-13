@@ -137,7 +137,7 @@ public class Vector implements Comparable<Vector>
     /*************************************************
      * FUNCTION
      *  crossProduct
-     * @param vector
+     * @param vector to cross product
      * @return A Vector value
      * MEANING
      *  This functions does crossProduct to the Vector and the parameter Vector and creates a new Vector with the result

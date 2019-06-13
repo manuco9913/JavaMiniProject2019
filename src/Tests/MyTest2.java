@@ -47,9 +47,16 @@ class MyTest2 {
                                            new Point3D(4000,2200,-800),new Point3D(4000,2200,100));
 
         //rectangle
-        Quadrangle back = new Quadrangle(new Point3D(400,0,100),new Point3D(400,0,-800),
-                new Point3D(4000,2200,-800),new Point3D(4000,2200,100));
-
+        Quadrangle baseQ = new Quadrangle(new Point3D(350,-2500,150),new Point3D(350,-2500,-1100),
+                new Point3D(350,2500,-1100),new Point3D(350,2500,150));
+        Quadrangle backQ = new Quadrangle(new Point3D(350,-2500,-1100), new Point3D(350,2500,-1100),
+                new Point3D(5100,2500,-1100),new Point3D(5100,-2500,-1100));
+        Quadrangle frontQ = new Quadrangle(new Point3D(350,-2500,150), new Point3D(350,2500,150),
+                new Point3D(5100,2500,150),new Point3D(5100,-2500,150));
+        Quadrangle rightQ = new Quadrangle(new Point3D(350,2500,-1100),new Point3D(350,2500,150),
+                new Point3D(5100,2500,150),new Point3D(5100,2500,-1100));
+        Quadrangle leftQ = new Quadrangle(new Point3D(350,-2500,150),new Point3D(350,-2500,-1100),
+                new Point3D(5100,-2500,-1100),new Point3D(5100,-2500,150));
         //pyramid1
 //        Triangle front1 = new Triangle(new Point3D(1350,-3000,))
 
@@ -66,6 +73,15 @@ class MyTest2 {
         base2.setEmmission(new Color(34, 92, 136));
         left2.setEmmission(new Color(34, 92, 136));
         right2.setEmmission(new Color(34, 92, 136));
+        baseQ.setEmmission(new Color(103, 103, 103));
+        backQ.setEmmission(new Color(103, 103, 103));
+//        backQ.getMaterial().setKr(0.9);
+        frontQ.getMaterial().setKt(0.9);
+//        frontQ.getMaterial().setKr(0.9);
+        leftQ.getMaterial().setKt(0.9);
+//        leftQ.getMaterial().setKr(0.9);
+        rightQ.getMaterial().setKt(0.9);
+//        rightQ.getMaterial().setKr(0.9);
 
         base1.getMaterial().setKr(0.9);
 //        left1.getMaterial().setKr(0.9);
@@ -77,8 +93,8 @@ class MyTest2 {
         scene.addLight((new DirectionalLight(new Color(37, 99, 25), new Vector(-600, 500, -1400))));
 //        scene.addLight(new SpotLight(new Color(31, 57, 201), new Point3D(1700,-3000,3500),
 //                new Vector(1300,2000,-550), 0, 0.00000008, 0.000005));
-        scene.addLight(new PointLight(new Color(201, 126, 134), new Point3D(7000,0,700),//////
-                0, 0.0000005, 0.0000005));
+        scene.addLight(new PointLight(new Color(201, 126, 134), new Point3D(7000,0,700),
+                0, 0.000005, 0.0000005));
 
         scene.addGeometry(plane);
         scene.addGeometry(sphere1);
@@ -88,9 +104,14 @@ class MyTest2 {
         scene.addGeometry(base2);
         scene.addGeometry(left2);
         scene.addGeometry(right2);
+        scene.addGeometry(baseQ);
+        scene.addGeometry(backQ);
+//        scene.addGeometry(frontQ);
+//        scene.addGeometry(leftQ);
+//        scene.addGeometry(rightQ);
 
 
-        ImageWriter imageWriter = new ImageWriter("MyTest2", 500, 500, 500, 500);
+        ImageWriter imageWriter = new ImageWriter("MyTest2-without", 500, 500, 500, 500);
         Render render = new Render(imageWriter, scene);
         render.renderImage();
         render.writeToImage();

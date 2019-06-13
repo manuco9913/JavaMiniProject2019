@@ -100,7 +100,7 @@ public class Triangle extends FlatGeometry implements Intersectable {
       double d2 = (new Vector(intersectionPoint3D, ray.getPOO())).dotProduct(n2);
       double d3 = (new Vector(intersectionPoint3D, ray.getPOO())).dotProduct(n3);
 
-      if (!((d1 > 0 && d2 > 0 && d3 > 0) || (d1 < 0 && d2 < 0 && d3 < 0)))
+      if (!((d1 >= 0 && d2 >= 0 && d3 >= 0) || (d1 <= 0 && d2 <= 0 && d3 <= 0)))
           intersectionPoints = new ArrayList<>();
 
       return intersectionPoints;

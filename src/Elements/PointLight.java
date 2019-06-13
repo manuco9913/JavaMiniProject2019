@@ -10,8 +10,8 @@ public class PointLight extends Light implements LightSource {
     double _Kc, _Kl, _Kq;//intensity
 // ***************** Constructors ********************** //
 
-    /**
-     * Constractor
+    /*******************************************************
+     * Constructor
      * Set Light: Color, Position and Constants By given parameters
      *
      * @param color Color To set As this light color
