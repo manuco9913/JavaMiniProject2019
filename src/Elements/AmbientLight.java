@@ -30,7 +30,9 @@ public class AmbientLight extends Light
     }
     public void setColor(Color c){_color = new Color(c.getRGB());}
     public double getKa(){return _Ka;}
-    public Color getIntensity(){return new Color((int)(_color.getRed()*_Ka),(int)(_color.getGreen()*_Ka),(int)(_color.getBlue()*_Ka));}
+    public Color getIntensity(){
+        return new Color((int)(_color.getRed()*_Ka),(int)(_color.getGreen()*_Ka),(int)(_color.getBlue()*_Ka));
+    }
 
     // ***************** Operations ********************** //
     /*************************************************

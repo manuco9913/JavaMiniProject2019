@@ -20,8 +20,8 @@ public class stam {
     void stam() {
 
         Scene scene = new Scene();
-//        scene.get_camera().setP0(new Point3D(0,0,1000));
-//        scene.set_camera(new Camera(new Point3D(1000,0,1000),new Vector(0,0,-1),
+//        scene.getCamera().setP0(new Point3D(0,0,1000));
+//        scene.setCamera(new Camera(new Point3D(1000,0,1000),new Vector(0,0,-1),
 //                new Vector(-1,0,0)));
 
         Sphere s = new Sphere(200, new Point3D());

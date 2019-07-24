@@ -1,9 +1,6 @@
 package Tests;
 
-import Elements.DirectionalLight;
-import Elements.PointLight;
 import Elements.SpotLight;
-import Geometries.Plane;
 import Geometries.Quadrangle;
 import Geometries.Sphere;
 import Geometries.Triangle;
@@ -21,8 +18,8 @@ public class MyTest3 {
     void MyTest3() {
 
         Scene scene = new Scene();
-        scene.get_camera().setP0(new Point3D(0,0,400));//original z: 400 //z far:2000, z far from behind -1300
-//        scene.get_camera().set_vTo(new Vector(0,0,1));//for behind
+        scene.getCamera().setP0(new Point3D(0,0,400));//original z: 400 //z far:2000, z far from behind -1300
+//        scene.getCamera().set_vTo(new Vector(0,0,1));//for behind
 
 //        Quadrangle baseQ = new Quadrangle(/*A*/new Point3D(600,-900,400),/*B*/new Point3D(600,-200,400),
 //                /*C*/new Point3D(600,-200,200),/*D*/new Point3D(600,-900,200));
@@ -45,7 +42,7 @@ public class MyTest3 {
         Triangle back = new Triangle(new Point3D(1500,-2500,400),new Point3D(1500,2500,400),
                 new Point3D(-1500,0,400));
         back.getMaterial().setKr(1);
-//        back.setEmmission(new Color(19, 0, 66));
+        back.setEmmission(new Color(66, 93, 93));
         scene.addGeometry(back);
 
         Sphere sphere = new Sphere(100,new Point3D(-350,-350,100));
@@ -79,6 +76,7 @@ public class MyTest3 {
 
         ImageWriter imageWriter = new ImageWriter("MyTest3", 500, 500, 500, 500);
         Render render = new Render(imageWriter, scene);
+//        render.setMoreReflectedON(true);
         render.renderImage();
         render.writeToImage();
     }

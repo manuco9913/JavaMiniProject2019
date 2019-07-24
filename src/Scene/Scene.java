@@ -50,37 +50,37 @@ public class Scene {
     public List<Geometry> get_geometries() {
         return _geometries;
     }
-    public double get_screenDistance() {
+    public double getScreenDistance() {
         return _screenDistance;
     }
-    public Camera get_camera() {
+    public Camera getCamera() {
         return _camera;
     }
-    public Color get_background() {
+    public Color getBackground() {
         return _background;
     }
-    public AmbientLight get_ambientLight() {
+    public AmbientLight getAmbientLight() {
         return _ambientLight;
     }
-    public String get_sceneName() {
+    public String getSceneName() {
         return _sceneName;
     }
-    public void set_geometries(List<Geometry> _geometries) {
+    public void setGeometries(List<Geometry> _geometries) {
         this._geometries = _geometries;
     }
-    public void set_screenDistance(double _screenDistance) {
+    public void setScreenDistance(double _screenDistance) {
         this._screenDistance = _screenDistance;
     }
-    public void set_camera(Camera _camera) {
+    public void setCamera(Camera _camera) {
         this._camera = _camera;
     }
-    public void set_background(Color _background) {
+    public void setBackground(Color _background) {
         this._background = _background;
     }
-    public void set_ambientLight(AmbientLight _ambientLight) {
+    public void setAmbientLight(AmbientLight _ambientLight) {
         this._ambientLight = _ambientLight;
     }
-    public void set_sceneName(String _sceneName) {
+    public void setSceneName(String _sceneName) {
         this._sceneName = _sceneName;
     }
 
@@ -127,14 +127,12 @@ public class Scene {
     public boolean equals(Object obj) {
         if (this == obj) return true;
         if (!(obj instanceof Scene)) return false;
-        Scene scene = (Scene) obj;
         return (_sceneName.compareTo(((Scene) obj)._sceneName)==0 &&
                 _background.equals(((Scene) obj)._background) &&
                 _ambientLight.equals(((Scene) obj)._ambientLight) &&
                 _camera.equals(((Scene) obj)._camera) &&
                 _screenDistance == ((Scene) obj)._screenDistance &&
-                _geometries.equals(((Scene) obj)._geometries)
-                );
+                _geometries.equals(((Scene) obj)._geometries));
     }
 
 }

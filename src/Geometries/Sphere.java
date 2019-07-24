@@ -58,29 +58,34 @@ public class Sphere extends RadialGeometry implements Intersectable
         List<Point3D> intersectionPoints= new ArrayList<>(2);
 
         Vector u = new Vector(ray.getPOO(), this.getCenter());
-        double tm = u.dotProduct(ray.getDirection());
+        Vector rayDirection = ray.getDirection();
+        Point3D POO = new Point3D(ray.getPOO());
+        double thisRadius = this._radius;
+
+        rayDirection.normalize();
+        double tm = u.dotProduct(rayDirection);
         double d = Math.sqrt((u.length()*u.length()) - (tm*tm));
 
-        if (d > this.getRadius())
+        if (d > thisRadius)
             return intersectionPoints; // return null;
 
-        double th = Math.sqrt((this.getRadius()*this.getRadius()) - (d*d));
+        double th = Math.sqrt((thisRadius*thisRadius) - (d*d));
 
         double t1 = tm - th;
         double t2 = tm + th;
 
         if (t1 >= 0){
-            Vector V = ray.getDirection();
+            Vector V = rayDirection;
             V = V.scale(t1);
-            Point3D p = ray.getPOO();
+            Point3D p = POO;
             Point3D P1 = p.add(V);
             intersectionPoints.add(P1);
         }
 
         if (t2 >= 0){
-            Vector V = ray.getDirection();
+            Vector V = rayDirection;
             V = V.scale(t2);
-            Point3D p = ray.getPOO();
+            Point3D p = POO;
             Point3D P2 = p.add(V);
             intersectionPoints.add(P2);
         }

@@ -134,5 +134,18 @@ public class Camera {
         Vector vector = new Vector(_P0, P);
         vector.normalize();
         return (new Ray(P, vector));
+
+
+       /* Point3D Pc = this._P0.add(this._vToward.scale(screenDist));
+
+        double Rx = screenWidth / Nx;
+        double Ry = screenHeight / Ny;
+
+        double Tright = (x - Nx / 2.0) * Rx + Rx / 2.0;
+        double Tup = (y - Ny / 2.0) * Ry + Ry / 2.0;
+
+        Point3D P = Pc.add(this._vRight.scale(Tright).subtract(this._vUp.scale(Tup)));
+        Vector temp = new Vector(P, _P0);
+        return new Ray(_P0, temp);*/
     }
 }

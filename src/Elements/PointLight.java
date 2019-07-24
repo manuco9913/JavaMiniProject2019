@@ -29,6 +29,11 @@ public class PointLight extends Light implements LightSource {
 
     }
 // ***************** Getters/Setters ********************** //
+
+    public Point3D getPosition() {
+        return _position;
+    }
+
     @Override
     public Vector getL(Point3D point)
     {

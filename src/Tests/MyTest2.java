@@ -2,11 +2,9 @@ package Tests;
 
 import Elements.DirectionalLight;
 import Elements.PointLight;
-import Elements.SpotLight;
 import Geometries.Plane;
 import Geometries.Quadrangle;
 import Geometries.Sphere;
-import Geometries.Triangle;
 import Primitives.Point3D;
 import Primitives.Vector;
 import Renderer.ImageWriter;
@@ -22,9 +20,9 @@ class MyTest2 {
     void MyTest2() {
 
         Scene scene = new Scene();
-        scene.get_camera().setP0(new Point3D(3000,0,1500));
-//        scene.get_camera().set_vTo(new Vector(0,100,-100));
-//        scene.get_camera().set_vUp(new Vector(1,1,0));
+        scene.getCamera().setP0(new Point3D(3000,0,1500));
+//        scene.getCamera().set_vTo(new Vector(0,100,-100));
+//        scene.getCamera().set_vUp(new Vector(1,1,0));
 
         Plane plane = new Plane(new Vector(1,0,1),new Point3D(0,0,0));
 //        Triangle front = new Triangle(new Point3D())
@@ -76,7 +74,7 @@ class MyTest2 {
         baseQ.setEmmission(new Color(103, 103, 103));
         backQ.setEmmission(new Color(103, 103, 103));
 //        backQ.getMaterial().setKr(0.9);
-        frontQ.getMaterial().setKt(0.9);
+        frontQ.getMaterial().setKt(1);
 //        frontQ.getMaterial().setKr(0.9);
         leftQ.getMaterial().setKt(0.9);
 //        leftQ.getMaterial().setKr(0.9);
@@ -91,8 +89,6 @@ class MyTest2 {
 //        right2.getMaterial().setKr(0.9);
 
         scene.addLight((new DirectionalLight(new Color(37, 99, 25), new Vector(-600, 500, -1400))));
-//        scene.addLight(new SpotLight(new Color(31, 57, 201), new Point3D(1700,-3000,3500),
-//                new Vector(1300,2000,-550), 0, 0.00000008, 0.000005));
         scene.addLight(new PointLight(new Color(201, 126, 134), new Point3D(7000,0,700),
                 0, 0.000005, 0.0000005));
 
@@ -106,13 +102,14 @@ class MyTest2 {
         scene.addGeometry(right2);
         scene.addGeometry(baseQ);
         scene.addGeometry(backQ);
-//        scene.addGeometry(frontQ);
-//        scene.addGeometry(leftQ);
-//        scene.addGeometry(rightQ);
+        scene.addGeometry(frontQ);
+        scene.addGeometry(leftQ);
+        scene.addGeometry(rightQ);
 
 
-        ImageWriter imageWriter = new ImageWriter("MyTest2-without", 500, 500, 500, 500);
+        ImageWriter imageWriter = new ImageWriter("MyTest2-MoreRays", 500, 500, 500, 500);
         Render render = new Render(imageWriter, scene);
+        render.setMoreRefractedON(true);
         render.renderImage();
         render.writeToImage();
     }

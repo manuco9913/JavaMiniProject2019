@@ -1,14 +1,9 @@
 package Tests;
 
-import Elements.DirectionalLight;
 import Elements.PointLight;
-import Elements.SpotLight;
-import Geometries.Plane;
 import Geometries.Quadrangle;
 import Geometries.Sphere;
-import Geometries.Triangle;
 import Primitives.Point3D;
-import Primitives.Vector;
 import Renderer.ImageWriter;
 import Renderer.Render;
 import Scene.Scene;
@@ -22,7 +17,7 @@ class MyTest1 {
     void MyTest1() {
 
         Scene scene = new Scene();
-        scene.get_camera().setP0(new Point3D(-200, 0, 300));//500
+        scene.getCamera().setP0(new Point3D(-200, 0, 300));//500
 
         Sphere sphere = new Sphere(200, new Point3D(300, -500, -250));
         Sphere sphere2 = new Sphere(300, new Point3D(350, -100, -600));

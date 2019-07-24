@@ -1,7 +1,5 @@
 package Tests;
 
-import Elements.DirectionalLight;
-import Elements.PointLight;
 import Elements.SpotLight;
 import Geometries.Plane;
 import Geometries.Sphere;
@@ -13,7 +11,6 @@ import Renderer.Render;
 import Scene.Scene;
 import org.junit.jupiter.api.Test;
 
-import javax.swing.plaf.basic.BasicTreeUI;
 import java.awt.*;
 
 public class MyTest4 {
@@ -22,8 +19,8 @@ public class MyTest4 {
     void MyTest4() {
 
         Scene scene = new Scene();
-        scene.get_camera().setP0(new Point3D(/*-50*/100,/*-500*/0,/*50*/400));//z:300
-//        scene.get_camera().set_vTo(new Vector(0,1,-1));
+        scene.getCamera().setP0(new Point3D(/*-50*/100,/*-500*/0,/*50*/400));//z:300
+//        scene.getCamera().set_vTo(new Vector(0,1,-1));
 
         Plane back = new Plane(new Vector(0,0,1),new Point3D(0,0,-200));
         back.getMaterial().setShininess(1000);

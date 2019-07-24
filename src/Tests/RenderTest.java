@@ -1,6 +1,5 @@
 package Tests;
 
-import Elements.*;
 import Geometries.*;
 import Primitives.*;
 import Renderer.*;
@@ -16,7 +15,7 @@ public class RenderTest {
     @Test
     public void emmissionTest() {
         Scene scene = new Scene();
-        scene.set_screenDistance(50);
+        scene.setScreenDistance(50);
 
         Sphere sphere = new Sphere(150, new Point3D(0.0, 0.0, -50));
         Triangle triangle1 = new Triangle(new Point3D(100, 0, -50),
@@ -62,14 +61,14 @@ public class RenderTest {
 
         new File(IMAGES_TEST_DIR);
         Scene scene = new Scene();
-        scene.set_screenDistance(50);
+        scene.setScreenDistance(50);
 
-        /*scene.set_camera(new Camera(
+        /*scene.setCamera(new Camera(
                 new Point3D(0,0,10),
                 new Vector(0,0,-1),
                 new Vector(0,1,0)));
-           scene.set_background(new Color(0.3f ,0.5f, 0.74f));*/
-//         scene.set_ambientLight(new AmbientLight(Color.BLACK);
+           scene.setBackground(new Color(0.3f ,0.5f, 0.74f));*/
+//         scene.setAmbientLight(new AmbientLight(Color.BLACK);
 
         Sphere sphere = new Sphere(50, new Point3D(0.0, 0.0, -50));
 
